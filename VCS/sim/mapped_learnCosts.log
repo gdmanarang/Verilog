@@ -1,0 +1,1063 @@
+Command: vcs ../rtl/mem.v ../mapped/mapped_learnCosts.v ../lib/saed90nm.v tb_learnCosts.v \
+-full64 -debug_pp +neg_tchk -R -l mapped_learnCosts.log
+                         Chronologic VCS (TM)
+       Version H-2013.06-SP1_Full64 -- Sun Mar 18 12:19:37 2018
+               Copyright (c) 1991-2013 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../rtl/mem.v'
+Parsing design file '../mapped/mapped_learnCosts.v'
+Parsing design file '../lib/saed90nm.v'
+Parsing design file 'tb_learnCosts.v'
+Top Level Modules:
+       AND2X2
+       AND2X4
+       AND3X2
+       AND3X4
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X2
+       AO221X2
+       AO222X2
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X1
+       AOI21X2
+       AOI221X1
+       AOI221X2
+       AOI222X1
+       AOI222X2
+       AOI22X1
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX1
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX1
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX1
+       DFFNX2
+       DFFSSRX1
+       DFFSSRX2
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX2
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX16
+       INVX1
+       INVX2
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX1
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X1
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X0
+       NAND2X2
+       NAND2X4
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X1
+       NBUFFX16
+       NBUFFX2
+       NBUFFX32
+       NBUFFX4
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X1
+       NOR2X2
+       NOR2X4
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X1
+       OA21X2
+       OA221X2
+       OA222X2
+       OA22X2
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X1
+       OAI22X2
+       OR2X2
+       OR2X4
+       OR3X2
+       OR3X4
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX1
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X2
+       XOR3X1
+       XOR3X2
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       tb_learnCosts
+TimeScale is 1 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 88: FADDX1 U1_10( .A (A[10]),  .B (B[10]), 
+  .CI (carry[10]),  .S (SUM[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 639: learnCosts_DW01_add_11 r159( .A 
+  (sinkID_address_buf),  .B ({k[9:2], N249, N248, 1'b0}),  .CI (1'b0),  .SUM 
+  ({N280, N279, N278, N277, N276, N275, N274, N273, N ...
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 642: DFFX1 done_buf_reg( .D (n385),  .CLK 
+  (clock),  .Q (done));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 643: DFFX1 \neighborCount_reg[15] ( .D 
+  (n369),  .CLK (clock),  .Q (neighborCount[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 645: DFFX1 \neighborCount_reg[14] ( .D 
+  (n370),  .CLK (clock),  .Q (neighborCount[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 647: DFFX1 \neighborCount_reg[13] ( .D 
+  (n371),  .CLK (clock),  .Q (neighborCount[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 649: DFFX1 \neighborCount_reg[12] ( .D 
+  (n372),  .CLK (clock),  .Q (neighborCount[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 651: DFFX1 \neighborCount_reg[11] ( .D 
+  (n373),  .CLK (clock),  .Q (neighborCount[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 653: DFFX1 \neighborCount_reg[10] ( .D 
+  (n374),  .CLK (clock),  .Q (neighborCount[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 655: DFFX1 \neighborCount_reg[9] ( .D 
+  (n375),  .CLK (clock),  .Q (neighborCount[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 657: DFFX1 \neighborCount_reg[8] ( .D 
+  (n376),  .CLK (clock),  .Q (neighborCount[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 659: DFFX1 \neighborCount_reg[7] ( .D 
+  (n377),  .CLK (clock),  .Q (neighborCount[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 661: DFFX1 \neighborCount_reg[6] ( .D 
+  (n378),  .CLK (clock),  .Q (neighborCount[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 663: DFFX1 \neighborCount_reg[5] ( .D 
+  (n379),  .CLK (clock),  .Q (neighborCount[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 665: DFFX1 \neighborCount_reg[4] ( .D 
+  (n380),  .CLK (clock),  .Q (neighborCount[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 667: DFFX1 \neighborCount_reg[3] ( .D 
+  (n381),  .CLK (clock),  .Q (neighborCount[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 673: DFFX1 \knownSinkCount_reg[15] ( .D 
+  (n353),  .CLK (clock),  .Q (knownSinkCount[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 675: DFFX1 \knownSinkCount_reg[14] ( .D 
+  (n354),  .CLK (clock),  .Q (knownSinkCount[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 677: DFFX1 \knownSinkCount_reg[13] ( .D 
+  (n355),  .CLK (clock),  .Q (knownSinkCount[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 679: DFFX1 \knownSinkCount_reg[12] ( .D 
+  (n356),  .CLK (clock),  .Q (knownSinkCount[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 681: DFFX1 \knownSinkCount_reg[11] ( .D 
+  (n357),  .CLK (clock),  .Q (knownSinkCount[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 683: DFFX1 \knownSinkCount_reg[10] ( .D 
+  (n358),  .CLK (clock),  .Q (knownSinkCount[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 685: DFFX1 \knownSinkCount_reg[9] ( .D 
+  (n359),  .CLK (clock),  .Q (knownSinkCount[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 687: DFFX1 \knownSinkCount_reg[8] ( .D 
+  (n360),  .CLK (clock),  .Q (knownSinkCount[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 689: DFFX1 \knownSinkCount_reg[7] ( .D 
+  (n361),  .CLK (clock),  .Q (knownSinkCount[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 691: DFFX1 \knownSinkCount_reg[6] ( .D 
+  (n362),  .CLK (clock),  .Q (knownSinkCount[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 693: DFFX1 \knownSinkCount_reg[5] ( .D 
+  (n363),  .CLK (clock),  .Q (knownSinkCount[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 695: DFFX1 \knownSinkCount_reg[4] ( .D 
+  (n364),  .CLK (clock),  .Q (knownSinkCount[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 697: DFFX1 \knownSinkCount_reg[3] ( .D 
+  (n365),  .CLK (clock),  .Q (knownSinkCount[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 699: DFFX1 \knownSinkCount_reg[2] ( .D 
+  (n366),  .CLK (clock),  .Q (knownSinkCount[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 705: DFFX1 \k_reg[15] ( .D (n402),  .CLK 
+  (clock),  .Q (k[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 706: DFFX1 \k_reg[14] ( .D (n387),  .CLK 
+  (clock),  .Q (k[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 707: DFFX1 \k_reg[13] ( .D (n388),  .CLK 
+  (clock),  .Q (k[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 708: DFFX1 \k_reg[12] ( .D (n389),  .CLK 
+  (clock),  .Q (k[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 709: DFFX1 \k_reg[11] ( .D (n390),  .CLK 
+  (clock),  .Q (k[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 710: DFFX1 \k_reg[10] ( .D (n391),  .CLK 
+  (clock),  .Q (k[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 711: DFFX1 \k_reg[9] ( .D (n392),  .CLK 
+  (clock),  .Q (k[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 712: DFFX1 \k_reg[8] ( .D (n393),  .CLK 
+  (clock),  .Q (k[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 713: DFFX1 \k_reg[7] ( .D (n394),  .CLK 
+  (clock),  .Q (k[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 714: DFFX1 \k_reg[6] ( .D (n395),  .CLK 
+  (clock),  .Q (k[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 715: DFFX1 \k_reg[5] ( .D (n396),  .CLK 
+  (clock),  .Q (k[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 716: DFFX1 \k_reg[4] ( .D (n397),  .CLK 
+  (clock),  .Q (k[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 717: DFFX1 \k_reg[3] ( .D (n398),  .CLK 
+  (clock),  .Q (k[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 721: DFFX1 \state_reg[2] ( .D (N584),  .CLK
+  (clock),  .Q (state[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 722: DFFX1 found_reg( .D (n338),  .CLK 
+  (clock),  .Q (found));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 723: DFFX1 \sinkID_address_buf_reg[2] ( .D 
+  (n407),  .CLK (clock),  .Q (sinkID_address_buf[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 725: DFFX1 \sinkID_address_buf_reg[1] ( .D 
+  (n408),  .CLK (clock),  .Q (sinkID_address_buf[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 727: DFFX1 \sinkID_address_buf_reg[0] ( .D 
+  (n409),  .CLK (clock),  .Q (sinkID_address_buf[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 729: DFFX1 \data_out_buf_reg[15] ( .D 
+  (n322),  .CLK (clock),  .Q (data_out[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 730: DFFX1 \data_out_buf_reg[14] ( .D 
+  (n323),  .CLK (clock),  .Q (data_out[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 731: DFFX1 \data_out_buf_reg[13] ( .D 
+  (n324),  .CLK (clock),  .Q (data_out[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 732: DFFX1 \data_out_buf_reg[12] ( .D 
+  (n325),  .CLK (clock),  .Q (data_out[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 733: DFFX1 \data_out_buf_reg[11] ( .D 
+  (n326),  .CLK (clock),  .Q (data_out[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 734: DFFX1 \data_out_buf_reg[10] ( .D 
+  (n327),  .CLK (clock),  .Q (data_out[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 735: DFFX1 \data_out_buf_reg[9] ( .D 
+  (n328),  .CLK (clock),  .Q (data_out[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 736: DFFX1 \data_out_buf_reg[8] ( .D 
+  (n329),  .CLK (clock),  .Q (data_out[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 737: DFFX1 \data_out_buf_reg[7] ( .D 
+  (n330),  .CLK (clock),  .Q (data_out[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 738: DFFX1 \data_out_buf_reg[6] ( .D 
+  (n331),  .CLK (clock),  .Q (data_out[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 739: DFFX1 \data_out_buf_reg[5] ( .D 
+  (n332),  .CLK (clock),  .Q (data_out[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 740: DFFX1 \data_out_buf_reg[4] ( .D 
+  (n333),  .CLK (clock),  .Q (data_out[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 741: DFFX1 \data_out_buf_reg[3] ( .D 
+  (n334),  .CLK (clock),  .Q (data_out[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 742: DFFX1 \data_out_buf_reg[2] ( .D 
+  (n335),  .CLK (clock),  .Q (data_out[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 743: DFFX1 \data_out_buf_reg[1] ( .D 
+  (n336),  .CLK (clock),  .Q (data_out[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 744: DFFX1 \data_out_buf_reg[0] ( .D 
+  (n337),  .CLK (clock),  .Q (data_out[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 745: DFFX1 \n_reg[15] ( .D (n403),  .CLK 
+  (clock),  .Q (n[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 746: DFFX1 \n_reg[14] ( .D (n339),  .CLK 
+  (clock),  .Q (n[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 747: DFFX1 \n_reg[13] ( .D (n340),  .CLK 
+  (clock),  .Q (n[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 748: DFFX1 \n_reg[12] ( .D (n341),  .CLK 
+  (clock),  .Q (n[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 749: DFFX1 \n_reg[11] ( .D (n342),  .CLK 
+  (clock),  .Q (n[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 750: DFFX1 \n_reg[10] ( .D (n343),  .CLK 
+  (clock),  .Q (n[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 751: DFFX1 \n_reg[9] ( .D (n344),  .CLK 
+  (clock),  .Q (n[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 752: DFFX1 \n_reg[8] ( .D (n345),  .CLK 
+  (clock),  .Q (n[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 753: DFFX1 \n_reg[7] ( .D (n346),  .CLK 
+  (clock),  .Q (n[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 754: DFFX1 \n_reg[6] ( .D (n347),  .CLK 
+  (clock),  .Q (n[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 755: DFFX1 \n_reg[5] ( .D (n348),  .CLK 
+  (clock),  .Q (n[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 756: DFFX1 \n_reg[4] ( .D (n349),  .CLK 
+  (clock),  .Q (n[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 757: DFFX1 \n_reg[3] ( .D (n350),  .CLK 
+  (clock),  .Q (n[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 760: DFFX1 \n_reg[0] ( .D (n404),  .CLK 
+  (clock),  .Q (N191));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 761: DFFX1 \sinkID_address_buf_reg[3] ( .D 
+  (n317),  .CLK (clock),  .Q (sinkID_address_buf[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 763: DFFX1 \sinkID_address_buf_reg[10] ( .D
+  (n310),  .CLK (clock),  .Q (sinkID_address_buf[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 765: DFFX1 \sinkID_address_buf_reg[9] ( .D 
+  (n311),  .CLK (clock),  .Q (sinkID_address_buf[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 767: DFFX1 \sinkID_address_buf_reg[8] ( .D 
+  (n312),  .CLK (clock),  .Q (sinkID_address_buf[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 769: DFFX1 \sinkID_address_buf_reg[7] ( .D 
+  (n313),  .CLK (clock),  .Q (sinkID_address_buf[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 771: DFFX1 \sinkID_address_buf_reg[6] ( .D 
+  (n314),  .CLK (clock),  .Q (sinkID_address_buf[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 773: DFFX1 \sinkID_address_buf_reg[5] ( .D 
+  (n315),  .CLK (clock),  .Q (sinkID_address_buf[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 775: DFFX1 \sinkID_address_buf_reg[4] ( .D 
+  (n316),  .CLK (clock),  .Q (sinkID_address_buf[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 777: DFFX1 \address_count_reg[10] ( .D 
+  (n299),  .CLK (clock),  .Q (address[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 778: DFFX1 \address_count_reg[9] ( .D 
+  (n300),  .CLK (clock),  .Q (address[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 779: DFFX1 \address_count_reg[8] ( .D 
+  (n301),  .CLK (clock),  .Q (address[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 780: DFFX1 \address_count_reg[7] ( .D 
+  (n302),  .CLK (clock),  .Q (address[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 781: DFFX1 \address_count_reg[6] ( .D 
+  (n303),  .CLK (clock),  .Q (address[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 782: DFFX1 \address_count_reg[5] ( .D 
+  (n304),  .CLK (clock),  .Q (address[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 783: DFFX1 \address_count_reg[4] ( .D 
+  (n305),  .CLK (clock),  .Q (address[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 784: DFFX1 \address_count_reg[3] ( .D 
+  (n306),  .CLK (clock),  .Q (address[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 785: DFFX1 \address_count_reg[2] ( .D 
+  (n307),  .CLK (clock),  .Q (address[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 786: DFFX1 \address_count_reg[1] ( .D 
+  (n308),  .CLK (clock),  .Q (address[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 787: DFFX1 \address_count_reg[0] ( .D 
+  (n309),  .CLK (clock),  .Q (address[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_learnCosts.v", 788: DFFX1 reinit_reg( .D (n386),  .CLK 
+  (clock),  .Q (reinit));
+  
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "../mapped/learnCosts.sdf"
+   ***    Annotation scope: tb_learnCosts.lc1
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Mar 18 12:19:38 2018
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_IWSBA] INTERCONNECT will still be annotated
+../mapped/learnCosts.sdf, 624
+module: DFFX1, "instance: tb_learnCosts.lc1.\sinkID_address_buf_reg[0] "
+  SDF Warning: INTERCONNECT from \sinkID_address_buf_reg[0] .Q to U454.IN1 has
+  Instance at ../mapped/mapped_learnCosts.v:639, delay will still be 
+  annotated.
+
+
+          Total errors: 0
+          Total warnings: 1
+   ***    SDF annotation completed: Sun Mar 18 12:19:38 2018
+
+
+Starting vcs inline pass...
+327 modules and 26 UDPs read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module tb_learnCosts because:
+	This module or some inlined child module(s) has/have been modified.
+make[1]: Entering directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+ld -r -o pre_vcsobj_0_1.o --whole-archive pre_vcsobj_0_1.a --no-whole-archive
+ld -r -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+ld -r -o pre_vcsobj_1_2.o --whole-archive pre_vcsobj_1_2.a --no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv     -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o \
+5NrIB_d.o SIM_l.o    pre_vcsobj_0_1.o pre_vcsobj_1_1.o pre_vcsobj_1_2.o  rmapats_mop.o \
+rmapats.o       /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libzerosoft_rt_stubs.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so     /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsnew.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsucli.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libuclinative.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o -ldl -lm \
+-lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+Command: ./simv +neg_tchk -a mapped_learnCosts.log
+Chronologic VCS simulator copyright 1991-2013
+Contains Synopsys proprietary information.
+Compiler version H-2013.06-SP1_Full64; Runtime version H-2013.06-SP1_Full64;  Mar 18 12:19 2018
+Doing SDF annotation ...... Done
+VCD+ Writer H-2013.06-SP1_Full64 Copyright (c) 1991-2013 by Synopsys Inc.
+$finish called from file "tb_learnCosts.v", line 72.
+$finish at simulation time              1200000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1200000 ps
+CPU Time:      0.500 seconds;       Data structure size:   0.7Mb
+Sun Mar 18 12:19:44 2018
+CPU time: 1.872 seconds to compile + .014 seconds to elab + .451 seconds to link + .649 seconds in simulation

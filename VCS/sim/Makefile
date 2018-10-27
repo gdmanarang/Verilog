@@ -34,8 +34,16 @@ rnga:
 	vcs ../mapped/mapped_rngAddress.v ../lib/saed90nm.v tb_rngAddress.v -full64 -debug_pp +neg_tchk -R -l mapped_rngAddress.log
 	./simv
 
+urnga:
+	vcs ../rtl/rngAddress.v ../lib/saed90nm.v tb_rngAddress.v -full64 -debug_pp +neg_tchk -R -l u_rngAddress.log
+	./simv
+
 rng:
 	vcs ../mapped/mapped_randomGenerator.v ../lib/saed90nm.v tb_randomGenerator.v -full64 -debug_pp +neg_tchk -R -l mapped_randomGenerator.log
+	./simv
+
+urng:
+	vcs ../rtl/randomGenerator.v ../lib/saed90nm.v tb_randomGenerator.v -full64 -debug_pp +neg_tchk -R -l u_randomGenerator.log
 	./simv
 
 tbm:
@@ -46,12 +54,16 @@ wp:
 	vcs ../rtl/mem.v ../mapped/mapped_randomGenerator.v ../mapped/mapped_rngAddress.v ../mapped/mapped_winnerPolicy.v ../lib/saed90nm.v tb_winnerPolicy.v -full64 -debug_pp +neg_tchk -R -l mapped_winnerPolicy.log 
 	./simv
 
+uwp:
+	vcs ../rtl/mem.v ../rtl/randomGenerator.v ../rtl/rngAddress.v ../rtl/winnerPolicy.v ../lib/saed90nm.v tb_winnerPolicy.v -full64 -debug_pp +neg_tchk -R -l u_winnerPolicy.log 
+	./simv
+
 lc:
 	vcs ../rtl/mem.v ../mapped/mapped_learnCosts.v ../lib/saed90nm.v tb_learnCosts.v -full64 -debug_pp +neg_tchk -R -l mapped_learnCosts.log
 	./simv
 
-fsl:
-	vcs ../rtl/mem.v ../mapped/mapped_fixSinkList.v ../lib/saed90nm.v tb_fixSinkList.v -full64 -debug_pp +neg_tchk -R -l mapped_fixSinkList.log
+ulc:
+	vcs ../rtl/mem.v ../rtl/learnCosts.v ../lib/saed90nm.v tb_learnCosts.v -full64 -debug_pp +neg_tchk -R -l mapped_learnCosts.log
 	./simv
 
 s: 
@@ -63,6 +75,10 @@ r:
 	./simv
 
 top:
-	vcs ../rtl/memory.v ../mapped/top_mapped.v ../lib/saed90nm.v tb_top.v -full64 -debug_pp +neg_tchk -R -l top_mapped.log
+	vcs ../rtl/memory.v ../mapped/top_mapped.v ../lib/CORE65GPSVT.v tb_top.v -full64 -debug_pp +neg_tchk -R -l top_mapped.log
+	./simv
+
+utop:
+	vcs ../rtl/memory.v ../rtl/top.v ../lib/saed90nm.v tb_top.v -full64 -debug_pp +neg_tchk -R -l utop.log
 	./simv
 

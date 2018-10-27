@@ -1,0 +1,168 @@
+set_app_var search_path "$search_path mapped lib cons rtl"
+. /nfs/cad/synopsys/syn/I-2013.12/libraries/syn /nfs/cad/synopsys/syn/I-2013.12/minpower/syn /nfs/cad/synopsys/syn/I-2013.12/dw/syn_ver /nfs/cad/synopsys/syn/I-2013.12/dw/sim_ver mapped lib cons rtl mapped lib cons rtl
+set_app_var target_library saed90nm_typ.db
+saed90nm_typ.db
+set_app_var link_library "* $target_library"
+* saed90nm_typ.db
+read_verilog "amISink.v"
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/nfs/home/rrmina/Desktop/VCS/rtl/amISink.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/home/rrmina/Desktop/VCS/rtl/amISink.v
+
+Statistics for case statements in always block at line 21 in file
+        '/nfs/home/rrmina/Desktop/VCS/rtl/amISink.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            32            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine amISink line 21 in file
+                '/nfs/home/rrmina/Desktop/VCS/rtl/amISink.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|       state_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+| forAggregation_buf_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      done_buf_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    data_out_buf_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   address_count_reg    | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     wr_en_buf_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/home/rrmina/Desktop/VCS/rtl/amISink.db:amISink'
+Loaded 1 design.
+Current design is 'amISink'.
+amISink
+current_design amISink
+Current design is 'amISink'.
+{amISink}
+link
+
+  Linking design 'amISink'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  amISink                     /nfs/home/rrmina/Desktop/VCS/rtl/amISink.db
+  saed90nm_typ (library)      /nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db
+
+1
+check_design > check_design.log
+source timing.con
+1
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 29 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'amISink'
+Information: The register 'address_count_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'address_count_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     589.9      0.00       0.0       0.0                          
+    0:00:01     589.9      0.00       0.0       0.0                          
+    0:00:01     589.9      0.00       0.0       0.0                          
+    0:00:01     589.9      0.00       0.0       0.0                          
+    0:00:01     589.9      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+    0:00:01     542.0      0.00       0.0       0.0                          
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_constraint -all_violators > constraint_report.log
+report_area > area_report.log
+report_timing > timing_report.log
+write_sdf -version 1.0 mapped/amISink_mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/nfs/home/rrmina/Desktop/VCS/mapped/amISink_mapped.sdf'. (WT-3)
+1
+write -f verilog -hier -out mapped/amISink_mapped.v
+Writing verilog file '/nfs/home/rrmina/Desktop/VCS/mapped/amISink_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+gui_start
+Current design is 'amISink'.
+Current design is 'amISink'.
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/generic.sdb'
+dc_shell> exit
+
+Thank you...
+

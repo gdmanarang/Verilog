@@ -1,7 +1,4 @@
 `timescale 1ns/1ps
-`define MEM_DEPTH  2048
-`define MEM_WIDTH  8
-`define WORD_WIDTH 16
 
 /* Address List
  * (2/4)        [0x0 - 0x07]        amISink/forAggregation FLAGS
@@ -53,12 +50,12 @@
 
 module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID, fbatteryStat, fValue, fclusterID, fdestinationID, reward_out, done_reward);
 	input clock, nrst, en;
-	input [`WORD_WIDTH-1:0] fsourceID, fbatteryStat, fValue, fclusterID, fdestinationID;
+	input [16-1:0] fsourceID, fbatteryStat, fValue, fclusterID, fdestinationID;
 
 	// MEMORY MODULE CONNECTIONS
-	input [`WORD_WIDTH-1:0] mem_data_out;
+	input [16-1:0] mem_data_out;
 	output [10:0] address;
-	output [`WORD_WIDTH-1:0] mem_data_in;
+	output [16-1:0] mem_data_in;
 	output wr_en;
 
 	// MUX MODULE
@@ -67,8 +64,8 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 	wire [10:0] addr_0, addr_1, addr_2, addr_3, addr_4, addr_5, addr_6, addr_7;
 	mux_11bit addr_mux(addr_select, address, addr_0, addr_1, addr_2, addr_3, addr_4, addr_5, addr_6, addr_7);
 
-	wire [`WORD_WIDTH-1:0] mdi_0, mdi_1, mdi_2, mdi_3, mdi_5, mdi_6, mdi_7;
-	reg [`WORD_WIDTH-1:0] mdi_4;
+	wire [16-1:0] mdi_0, mdi_1, mdi_2, mdi_3, mdi_5, mdi_6, mdi_7;
+	reg [16-1:0] mdi_4;
 	mux_16bit mdi_mux(addr_select, mem_data_in, mdi_0, mdi_1, mdi_2, mdi_3, mdi_4, mdi_5, mdi_6, mdi_7);
 	
 	wire wren_0, wren_1, wren_2, wren_3, wren_5, wren_6, wren_7;
@@ -77,7 +74,7 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 
 	// learnCosts MODULE
 	wire done_learnCosts;
-	reg [`WORD_WIDTH-1:0] initial_epsilon;
+	reg [16-1:0] initial_epsilon;
 	learnCosts lc1(clock, nrst, en, fsourceID, fbatteryStat, fValue, fclusterID, initial_epsilon, addr_0, wren_0, mem_data_out, mdi_0, done_learnCosts);
 	//*/
 	// amISink MODULE
@@ -85,7 +82,7 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 	amISink ais1(clock, nrst, en, done_learnCosts, addr_1, wren_1, mem_data_out, mdi_1, forAggregation1, done_iamSink);
   
 	// amIDestination MODULE
-	reg [`WORD_WIDTH-1:0] MY_NODE_ID;
+	reg [16-1:0] MY_NODE_ID;
 	wire iamDestination, done_iamDestination;
 	amIDestination aif1(clock, nrst, en, done_iamSink, MY_NODE_ID, fdestinationID, iamDestination, done_iamDestination);
 	
@@ -94,18 +91,18 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 	fixSinkList fsl1(clock, nrst, en, done_iamDestination, addr_2, wren_2, mem_data_out, mdi_2, done_fixSinkList);
 
 	// neighborSinkInOtherCluster MODULE
-	reg [`WORD_WIDTH-1:0] MY_CLUSTER_ID;
+	reg [16-1:0] MY_CLUSTER_ID;
 	wire forAggregation2, done_neighborSinkInOtherCluster;
 	neighborSinkInOtherCluster nsioc1(clock, nrst, en, done_fixSinkList, addr_3, wren_3, mem_data_out, MY_CLUSTER_ID, mdi_3, forAggregation2, done_neighborSinkInOtherCluster);
 	
 	// findMyBest MODULE
-	reg [`WORD_WIDTH-1:0] MY_BATTERY_STAT;
-	wire [`WORD_WIDTH-1:0] mybest;
+	reg [16-1:0] MY_BATTERY_STAT;
+	wire [16-1:0] mybest;
 	wire done_findMyBest;
 	findMyBest fmb1(clock, nrst, en, done_neighborSinkInOtherCluster, addr_4, mem_data_out, MY_BATTERY_STAT, mybest, done_findMyBest);
 	
 	// betterNeighborsInMyCluster MODULE
-	wire [`WORD_WIDTH-1:0] besthop, bestvalue, bestneighborID, nextsinks;
+	wire [16-1:0] besthop, bestvalue, bestneighborID, nextsinks;
 	wire done_betterNeighborsInMyCluster;
 	betterNeighborsInMyCluster bnimc1(clock, nrst, en, done_findMyBest, addr_5, wren_5, mem_data_out, MY_CLUSTER_ID, mybest, besthop, bestvalue, bestneighborID, nextsinks, mdi_5, done_betterNeighborsInMyCluster);
 	
@@ -113,17 +110,17 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 
 	// RNG MODULE
 	wire en_rng, done_rng;
-	wire [`WORD_WIDTH-1:0] rng_out, rng_out_4bit;
+	wire [16-1:0] rng_out, rng_out_4bit;
 	randomGenerator rng1(clock, nrst, rng_out, rng_out_4bit, en_rng, done_rng);
 
 	// Modulo Module
-	wire [`WORD_WIDTH-1:0] rng_address, betterNeighborCount, which;
+	wire [16-1:0] rng_address, betterNeighborCount, which;
 	wire start_rngAddress, done_rngAddress;
 	rngAddress rad1(clock, nrst, start_rngAddress, betterNeighborCount, which, rng_address, done_rngAddress);
 
 	// WinnerPolicy Module
-	reg [`WORD_WIDTH-1:0] epsilon_step;
-	wire [`WORD_WIDTH-1:0] nexthop;
+	reg [16-1:0] epsilon_step;
+	wire [16-1:0] nexthop;
 	wire done_winnerPolicy;
 	winnerPolicy wp1(clock, nrst, en, done_betterNeighborsInMyCluster, mybest, besthop, bestvalue, bestneighborID, MY_NODE_ID,
 						addr_6, mem_data_out, wren_6, mdi_6, epsilon_step, nexthop, done_winnerPolicy, en_rng, rng_out, rng_out_4bit, 
@@ -143,14 +140,14 @@ module top(clock, nrst, en, address, wr_en, mem_data_in, mem_data_out, fsourceID
 	assign addr_7 = addr_7_buf;
 
 	// selectMyAction MODULE
-	wire [`WORD_WIDTH-1:0] action;
+	wire [16-1:0] action;
 	wire forAggregation3;
 	selectMyAction sma1(clock, nrst, en, done_winnerPolicy, addr_7_0, wren_7, nexthop, nextsinks, action, mdi_7, forAggregation3, done_selectMyAction);
 	//*/
 
 	// reward MODULE
 	output done_reward;
-	output [`WORD_WIDTH-1:0] reward_out;
+	output [16-1:0] reward_out;
 	reward r1(clock, nrst, en, done_selectMyAction, MY_NODE_ID, MY_CLUSTER_ID, action, besthop, addr_7_1, mem_data_out, reward_out, done_reward);
 
 	reg [2:0] state;

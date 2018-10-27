@@ -1,0 +1,199 @@
+set_app_var search_path "$search_path mapped lib cons rtl"
+. /nfs/cad/synopsys/syn/I-2013.12/libraries/syn /nfs/cad/synopsys/syn/I-2013.12/minpower/syn /nfs/cad/synopsys/syn/I-2013.12/dw/syn_ver /nfs/cad/synopsys/syn/I-2013.12/dw/sim_ver mapped lib cons rtl mapped lib cons rtl
+set_app_var target_library saed90nm_typ.db
+saed90nm_typ.db
+set_app_var link_library "* $target_library"
+* saed90nm_typ.db
+read_verilog "findMyBest.v"
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v
+Warning:  /nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v:68: signed to unsigned conversion occurs. (VER-318)
+Warning:  /nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v:83: signed to unsigned assignment occurs. (VER-318)
+$display output: qValue: ????????????????
+$display output: mybest: ????????????????
+$display output: MY_BATTERY_STAT: ????????????????
+$display output: k, kTemp, mybestTemp, mybest_buf, HCM: ?,????????????????????????????????,????????????????????????????????,????????????????,????????????????
+$display output: mybest_buf: ????????????????
+
+Statistics for case statements in always block at line 20 in file
+        '/nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            35            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine findMyBest line 20 in file
+                '/nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  address_count_reg  | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|  neighborCount_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    done_buf_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      kTemp_reg      | Flip-flop |  31   |  Y  | N  | N  | N  | N  | N  | N  |
+|   mybest_buf_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|        k_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        l_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.db:findMyBest'
+Loaded 1 design.
+Current design is 'findMyBest'.
+findMyBest
+current_design findMyBest
+Current design is 'findMyBest'.
+{findMyBest}
+link
+
+  Linking design 'findMyBest'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  findMyBest                  /nfs/home/rrmina/Desktop/VCS/rtl/findMyBest.db
+  saed90nm_typ (library)      /nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db
+
+1
+check_design > check_design.log
+source timing.con
+1
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 5 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'findMyBest'
+Information: The register 'kTemp_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'kTemp_reg[20]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'findMyBest_DW01_add_0'
+  Processing 'findMyBest_DW01_cmp2_0'
+  Processing 'findMyBest_DW01_inc_0'
+  Processing 'findMyBest_DW01_cmp6_0'
+  Processing 'findMyBest_DW01_cmp2_1'
+  Processing 'findMyBest_DW01_add_1'
+  Processing 'findMyBest_DW01_inc_1'
+  Allocating blocks in 'DW02_mult_A_width4_B_width16'
+  Building model 'DW01_add_width18' (cla)
+  Processing 'DW01_add_width18'
+  Building model 'DW02_mult_A_width4_B_width16' (csa)
+  Processing 'DW02_mult_A_width4_B_width16'
+  Processing 'findMyBest_DW02_mult_0'
+  Processing 'findMyBest_DW01_add_2'
+  Processing 'findMyBest_DW01_add_3'
+  Processing 'findMyBest_DW02_mult_1'
+  Processing 'findMyBest_DW01_add_4'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   17953.1      0.00       0.0       0.0                          
+    0:00:06   17953.1      0.00       0.0       0.0                          
+    0:00:06   17953.1      0.00       0.0       0.0                          
+    0:00:06   17953.1      0.00       0.0       0.0                          
+    0:00:06   17953.1      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:06   16876.0      0.00       0.0       0.0                          
+    0:00:07   16852.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07   16852.8      0.00       0.0       0.0                          
+    0:00:07   16852.8      0.00       0.0       0.0                          
+    0:00:07   16795.2      0.00       0.0       0.0                          
+    0:00:07   16795.2      0.00       0.0       0.0                          
+    0:00:07   16795.2      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+    0:00:07   16708.6      0.00       0.0       0.0                          
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_constraint -all_violators > constraint_report.log
+report_area > area_report.log
+report_timing > timing_report.log
+write_sdf -version 1.0 mapped/findMyBest_mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/nfs/home/rrmina/Desktop/VCS/mapped/findMyBest_mapped.sdf'. (WT-3)
+1
+write -f verilog -hier -out mapped/findMyBest_mapped.v
+Writing verilog file '/nfs/home/rrmina/Desktop/VCS/mapped/findMyBest_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 14 nets to module findMyBest_DW02_mult_1 using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 17 nets to module findMyBest using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+gui_start
+Current design is 'findMyBest'.
+dc_shell> exit
+
+Thank you...
+

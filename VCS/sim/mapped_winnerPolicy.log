@@ -1,0 +1,1674 @@
+Command: vcs ../rtl/mem.v ../mapped/mapped_randomGenerator.v ../mapped/mapped_rngAddress.v \
+../mapped/mapped_winnerPolicy.v ../lib/saed90nm.v tb_winnerPolicy.v -full64 -debug_pp \
++neg_tchk -R -l mapped_winnerPolicy.log
+                         Chronologic VCS (TM)
+       Version H-2013.06-SP1_Full64 -- Sun Mar 18 12:34:07 2018
+               Copyright (c) 1991-2013 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../rtl/mem.v'
+Parsing design file '../mapped/mapped_randomGenerator.v'
+Parsing design file '../mapped/mapped_rngAddress.v'
+Parsing design file '../mapped/mapped_winnerPolicy.v'
+Parsing design file '../lib/saed90nm.v'
+Parsing design file 'tb_winnerPolicy.v'
+Top Level Modules:
+       AND2X2
+       AND2X4
+       AND3X2
+       AND3X4
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X2
+       AO221X2
+       AO222X2
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X1
+       AOI21X2
+       AOI221X2
+       AOI222X2
+       AOI22X1
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX1
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX1
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX1
+       DFFNX2
+       DFFSSRX2
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX2
+       HADDX1
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX16
+       INVX1
+       INVX2
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX1
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X2
+       NAND2X4
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X1
+       NBUFFX16
+       NBUFFX2
+       NBUFFX32
+       NBUFFX4
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X1
+       NOR2X2
+       NOR2X4
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X1
+       OA21X2
+       OA221X2
+       OA222X1
+       OA222X2
+       OA22X2
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X1
+       OAI22X2
+       OR2X2
+       OR2X4
+       OR3X1
+       OR3X2
+       OR3X4
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX1
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X2
+       XOR3X2
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       tb_winnerPolicy
+TimeScale is 1 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 29: DFFX1 done_buf_reg( .D (n32),  
+  .CLK (clock),  .Q (done));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 30: DFFX1 \rng_out_buf_reg[0] ( .D 
+  (n31),  .CLK (clock),  .Q (rng_out[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 31: DFFX1 \rng_out_buf_reg[1] ( .D 
+  (n30),  .CLK (clock),  .Q (rng_out[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 32: DFFX1 \rng_out_buf_reg[2] ( .D 
+  (n29),  .CLK (clock),  .Q (rng_out[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 33: DFFX1 \rng_out_buf_reg[3] ( .D 
+  (n28),  .CLK (clock),  .Q (rng_out[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 34: DFFX1 \rng_out_buf_reg[4] ( .D 
+  (n27),  .CLK (clock),  .Q (rng_out[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 35: DFFX1 \rng_out_buf_reg[5] ( .D 
+  (n26),  .CLK (clock),  .Q (rng_out[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 36: DFFX1 \rng_out_buf_reg[6] ( .D 
+  (n25),  .CLK (clock),  .Q (rng_out[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 37: DFFX1 \rng_out_buf_reg[7] ( .D 
+  (n24),  .CLK (clock),  .Q (rng_out[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 38: DFFX1 \rng_out_buf_reg[8] ( .D 
+  (n23),  .CLK (clock),  .Q (rng_out[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 39: DFFX1 \rng_out_buf_reg[9] ( .D 
+  (n22),  .CLK (clock),  .Q (rng_out[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 40: DFFX1 \rng_out_buf_reg[10] ( .D 
+  (n21),  .CLK (clock),  .Q (rng_out[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 41: DFFX1 \rng_out_buf_reg[11] ( .D 
+  (n20),  .CLK (clock),  .Q (rng_out[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 42: DFFX1 \rng_out_buf_reg[12] ( .D 
+  (n19),  .CLK (clock),  .Q (rng_out[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 43: DFFX1 \rng_out_buf_reg[13] ( .D 
+  (n18),  .CLK (clock),  .Q (rng_out[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 44: DFFX1 \rng_out_buf_reg[14] ( .D 
+  (n17),  .CLK (clock),  .Q (rng_out[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_randomGenerator.v", 45: DFFX1 \rng_out_buf_reg[15] ( .D 
+  (n16),  .CLK (clock),  .Q (rng_out[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 115: rngAddress_DW01_sub_0 sub_29( .A 
+  (rng_address),  .B (betterNeighborCount),  .CI (1'b0),  .DIFF ({N37, N36, 
+  N35, N34, N33, N32, N31, N30, N29, N28, N27, N26, N ...
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 118: DFFX1 done_rng_address_buf_reg( .D 
+  (n38),  .CLK (clock),  .Q (done_rng_address));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 120: DFFX1 \state_reg[1] ( .D (n39),  .CLK 
+  (clock),  .Q (state[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 121: DFFX1 \rng_address_buf_reg[14] ( .D 
+  (n24),  .CLK (clock),  .Q (rng_address[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 123: DFFX1 \rng_address_buf_reg[13] ( .D 
+  (n25),  .CLK (clock),  .Q (rng_address[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 125: DFFX1 \rng_address_buf_reg[12] ( .D 
+  (n26),  .CLK (clock),  .Q (rng_address[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 127: DFFX1 \rng_address_buf_reg[11] ( .D 
+  (n27),  .CLK (clock),  .Q (rng_address[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 129: DFFX1 \rng_address_buf_reg[10] ( .D 
+  (n28),  .CLK (clock),  .Q (rng_address[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 131: DFFX1 \rng_address_buf_reg[9] ( .D 
+  (n29),  .CLK (clock),  .Q (rng_address[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 132: DFFX1 \rng_address_buf_reg[8] ( .D 
+  (n30),  .CLK (clock),  .Q (rng_address[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 133: DFFX1 \rng_address_buf_reg[7] ( .D 
+  (n31),  .CLK (clock),  .Q (rng_address[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 134: DFFX1 \rng_address_buf_reg[6] ( .D 
+  (n32),  .CLK (clock),  .Q (rng_address[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 135: DFFX1 \rng_address_buf_reg[5] ( .D 
+  (n33),  .CLK (clock),  .Q (rng_address[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 136: DFFX1 \rng_address_buf_reg[4] ( .D 
+  (n34),  .CLK (clock),  .Q (rng_address[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 137: DFFX1 \rng_address_buf_reg[3] ( .D 
+  (n35),  .CLK (clock),  .Q (rng_address[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 142: DFFX1 \rng_address_buf_reg[0] ( .D 
+  (n41),  .CLK (clock),  .Q (rng_address[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 143: DFFX1 \rng_address_buf_reg[15] ( .D 
+  (n40),  .CLK (clock),  .Q (rng_address[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 722: winnerPolicy_DW01_add_2 FS_1( .A 
+  ({1'b0, \A1[28] , \A1[27] , \A1[26] , \A1[25] , \A1[24] , \A1[23] , \A1[22] 
+  , \A1[21] , \SUMB[15][7] , \A1[19] , \A1[18] , \A ...
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 895: DFFX1 \_right_reg[7] ( .D (n201),  
+  .CLK (clock),  .Q (_right[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 896: DFFX1 \_right_reg[8] ( .D (n200),  
+  .CLK (clock),  .Q (_right[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 897: DFFX1 \_right_reg[9] ( .D (n199),  
+  .CLK (clock),  .Q (_right[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 898: DFFX1 \_right_reg[10] ( .D (n198),  
+  .CLK (clock),  .Q (_right[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 899: DFFX1 \_right_reg[11] ( .D (n197),  
+  .CLK (clock),  .Q (_right[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 900: DFFX1 \_right_reg[12] ( .D (n196),  
+  .CLK (clock),  .Q (_right[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 901: DFFX1 \_right_reg[13] ( .D (n195),  
+  .CLK (clock),  .Q (_right[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 902: DFFX1 \_right_reg[14] ( .D (n194),  
+  .CLK (clock),  .Q (_right[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 903: DFFX1 \_right_reg[15] ( .D (n193),  
+  .CLK (clock),  .Q (_right[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 904: DFFX1 \_right_reg[16] ( .D (n192),  
+  .CLK (clock),  .Q (_right[16]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 905: DFFX1 \_right_reg[17] ( .D (n191),  
+  .CLK (clock),  .Q (_right[17]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 906: DFFX1 \_right_reg[18] ( .D (n190),  
+  .CLK (clock),  .Q (_right[18]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 907: DFFX1 \_right_reg[19] ( .D (n189),  
+  .CLK (clock),  .Q (_right[19]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 908: DFFX1 \_right_reg[20] ( .D (n188),  
+  .CLK (clock),  .Q (_right[20]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 909: DFFX1 \_right_reg[21] ( .D (n187),  
+  .CLK (clock),  .Q (_right[21]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 910: DFFX1 \_right_reg[22] ( .D (n186),  
+  .CLK (clock),  .Q (_right[22]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 911: DFFX1 \_right_reg[23] ( .D (n185),  
+  .CLK (clock),  .Q (_right[23]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 912: DFFX1 \_right_reg[24] ( .D (n184),  
+  .CLK (clock),  .Q (_right[24]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 913: DFFX1 \_right_reg[25] ( .D (n183),  
+  .CLK (clock),  .Q (_right[25]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 914: DFFX1 \_right_reg[26] ( .D (n182),  
+  .CLK (clock),  .Q (_right[26]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 915: DFFX1 \_right_reg[27] ( .D (n181),  
+  .CLK (clock),  .Q (_right[27]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 916: DFFX1 \_right_reg[28] ( .D (n180),  
+  .CLK (clock),  .Q (_right[28]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 917: DFFX1 \_right_reg[29] ( .D (n179),  
+  .CLK (clock),  .Q (_right[29]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 918: DFFX1 \_right_reg[30] ( .D (n178),  
+  .CLK (clock),  .Q (_right[30]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 919: DFFX1 \_right_reg[31] ( .D (n177),  
+  .CLK (clock),  .Q (_right[31]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 920: DFFX1 \_right3_reg[31] ( .D (n144), 
+  .CLK (clock),  .Q (_right3[31]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 921: DFFX1 \_right3_reg[30] ( .D (n145), 
+  .CLK (clock),  .Q (_right3[30]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 922: DFFX1 \_right3_reg[29] ( .D (n146), 
+  .CLK (clock),  .Q (_right3[29]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 923: DFFX1 \_right3_reg[28] ( .D (n147), 
+  .CLK (clock),  .Q (_right3[28]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 924: DFFX1 \_right3_reg[27] ( .D (n148), 
+  .CLK (clock),  .Q (_right3[27]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 925: DFFX1 \_right3_reg[26] ( .D (n149), 
+  .CLK (clock),  .Q (_right3[26]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 926: DFFX1 \_right3_reg[25] ( .D (n150), 
+  .CLK (clock),  .Q (_right3[25]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 927: DFFX1 \_right3_reg[24] ( .D (n151), 
+  .CLK (clock),  .Q (_right3[24]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 928: DFFX1 \_right3_reg[23] ( .D (n152), 
+  .CLK (clock),  .Q (_right3[23]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 929: DFFX1 \_right3_reg[22] ( .D (n153), 
+  .CLK (clock),  .Q (_right3[22]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 930: DFFX1 \_right3_reg[21] ( .D (n154), 
+  .CLK (clock),  .Q (_right3[21]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 931: DFFX1 \_right3_reg[20] ( .D (n155), 
+  .CLK (clock),  .Q (_right3[20]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 932: DFFX1 \_right3_reg[19] ( .D (n156), 
+  .CLK (clock),  .Q (_right3[19]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 933: DFFX1 \_right3_reg[18] ( .D (n157), 
+  .CLK (clock),  .Q (_right3[18]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 934: DFFX1 \_right3_reg[17] ( .D (n158), 
+  .CLK (clock),  .Q (_right3[17]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 935: DFFX1 \_right3_reg[16] ( .D (n159), 
+  .CLK (clock),  .Q (_right3[16]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 936: DFFX1 \_right3_reg[15] ( .D (n160), 
+  .CLK (clock),  .Q (_right3[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 937: DFFX1 \_right3_reg[14] ( .D (n161), 
+  .CLK (clock),  .Q (_right3[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 938: DFFX1 \_right3_reg[13] ( .D (n162), 
+  .CLK (clock),  .Q (_right3[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 939: DFFX1 \_right3_reg[12] ( .D (n163), 
+  .CLK (clock),  .Q (_right3[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 940: DFFX1 \_right3_reg[11] ( .D (n164), 
+  .CLK (clock),  .Q (_right3[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 941: DFFX1 \_right3_reg[10] ( .D (n165), 
+  .CLK (clock),  .Q (_right3[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 942: DFFX1 \_right3_reg[9] ( .D (n166),  
+  .CLK (clock),  .Q (_right3[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 943: DFFX1 \_right3_reg[8] ( .D (n167),  
+  .CLK (clock),  .Q (_right3[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 944: DFFX1 \_right3_reg[7] ( .D (n168),  
+  .CLK (clock),  .Q (_right3[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 945: DFFX1 \_right3_reg[6] ( .D (n169),  
+  .CLK (clock),  .Q (_right3[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 946: DFFX1 \_right3_reg[5] ( .D (n170),  
+  .CLK (clock),  .Q (_right3[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 947: DFFX1 
+  \betterNeighborCount_buf_reg[0] ( .D (n272),  .CLK (clock),  .Q 
+  (betterNeighborCount[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 949: DFFX1 
+  \betterNeighborCount_buf_reg[1] ( .D (n271),  .CLK (clock),  .Q 
+  (betterNeighborCount[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 951: DFFX1 \data_out_buf_reg[15] ( .D 
+  (n225),  .CLK (clock),  .Q (data_out[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 952: DFFX1 \data_out_buf_reg[14] ( .D 
+  (n226),  .CLK (clock),  .Q (data_out[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 953: DFFX1 \data_out_buf_reg[13] ( .D 
+  (n227),  .CLK (clock),  .Q (data_out[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 954: DFFX1 \data_out_buf_reg[12] ( .D 
+  (n228),  .CLK (clock),  .Q (data_out[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 955: DFFX1 \data_out_buf_reg[11] ( .D 
+  (n229),  .CLK (clock),  .Q (data_out[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 956: DFFX1 \data_out_buf_reg[10] ( .D 
+  (n230),  .CLK (clock),  .Q (data_out[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 957: DFFX1 \data_out_buf_reg[9] ( .D 
+  (n231),  .CLK (clock),  .Q (data_out[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 958: DFFX1 \data_out_buf_reg[8] ( .D 
+  (n232),  .CLK (clock),  .Q (data_out[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 959: DFFX1 \data_out_buf_reg[7] ( .D 
+  (n233),  .CLK (clock),  .Q (data_out[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 960: DFFX1 \data_out_buf_reg[6] ( .D 
+  (n234),  .CLK (clock),  .Q (data_out[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 961: DFFX1 \data_out_buf_reg[5] ( .D 
+  (n235),  .CLK (clock),  .Q (data_out[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 962: DFFX1 \data_out_buf_reg[4] ( .D 
+  (n236),  .CLK (clock),  .Q (data_out[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 963: DFFX1 \data_out_buf_reg[3] ( .D 
+  (n237),  .CLK (clock),  .Q (data_out[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 964: DFFX1 \data_out_buf_reg[2] ( .D 
+  (n238),  .CLK (clock),  .Q (data_out[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 965: DFFX1 \data_out_buf_reg[1] ( .D 
+  (n239),  .CLK (clock),  .Q (data_out[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 966: DFFX1 \data_out_buf_reg[0] ( .D 
+  (n240),  .CLK (clock),  .Q (data_out[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 993: DFFX1 \address_count_reg[10] ( .D 
+  (n130),  .CLK (clock),  .Q (address[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 994: DFFX1 \address_count_reg[9] ( .D 
+  (n131),  .CLK (clock),  .Q (address[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 995: DFFX1 \address_count_reg[8] ( .D 
+  (n132),  .CLK (clock),  .Q (address[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 996: DFFX1 \address_count_reg[7] ( .D 
+  (n133),  .CLK (clock),  .Q (address[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 997: DFFX1 \address_count_reg[6] ( .D 
+  (n134),  .CLK (clock),  .Q (address[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 998: DFFX1 \address_count_reg[5] ( .D 
+  (n135),  .CLK (clock),  .Q (address[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 999: DFFX1 \address_count_reg[4] ( .D 
+  (n136),  .CLK (clock),  .Q (address[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1000: DFFX1 \address_count_reg[3] ( .D 
+  (n137),  .CLK (clock),  .Q (address[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1001: DFFX1 \address_count_reg[2] ( .D 
+  (n138),  .CLK (clock),  .Q (address[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1002: DFFX1 \address_count_reg[1] ( .D 
+  (n139),  .CLK (clock),  .Q (address[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1003: DFFX1 \nexthop_buf_reg[15] ( .D 
+  (n113),  .CLK (clock),  .Q (nexthop[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1004: DFFX1 \nexthop_buf_reg[14] ( .D 
+  (n114),  .CLK (clock),  .Q (nexthop[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1005: DFFX1 \nexthop_buf_reg[13] ( .D 
+  (n115),  .CLK (clock),  .Q (nexthop[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1006: DFFX1 \nexthop_buf_reg[12] ( .D 
+  (n116),  .CLK (clock),  .Q (nexthop[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1007: DFFX1 \nexthop_buf_reg[11] ( .D 
+  (n117),  .CLK (clock),  .Q (nexthop[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1008: DFFX1 \nexthop_buf_reg[10] ( .D 
+  (n118),  .CLK (clock),  .Q (nexthop[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1009: DFFX1 \nexthop_buf_reg[9] ( .D 
+  (n119),  .CLK (clock),  .Q (nexthop[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1010: DFFX1 \nexthop_buf_reg[8] ( .D 
+  (n120),  .CLK (clock),  .Q (nexthop[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1011: DFFX1 \nexthop_buf_reg[7] ( .D 
+  (n121),  .CLK (clock),  .Q (nexthop[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1012: DFFX1 \nexthop_buf_reg[5] ( .D 
+  (n123),  .CLK (clock),  .Q (nexthop[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1013: DFFX1 \nexthop_buf_reg[4] ( .D 
+  (n124),  .CLK (clock),  .Q (nexthop[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1014: DFFX1 \nexthop_buf_reg[3] ( .D 
+  (n125),  .CLK (clock),  .Q (nexthop[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1015: DFFX1 \nexthop_buf_reg[2] ( .D 
+  (n126),  .CLK (clock),  .Q (nexthop[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1016: DFFX1 \nexthop_buf_reg[1] ( .D 
+  (n127),  .CLK (clock),  .Q (nexthop[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1017: winnerPolicy_DW01_sub_0 sub_131( .A
+  (epsilon_buf),  .B (epsilon_step),  .CI (1'b0),  .DIFF ({N147, N146, N145, 
+  N144, N143, N142, N141, N140, N139, N138, N137, ...
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1111: DFFX1 done_winnerPolicy_buf_reg( .D
+  (n141),  .CLK (clock),  .Q (done_winnerPolicy));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1114: DFFX1 one_reg( .D (n176),  .CLK 
+  (clock),  .Q (one));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1115: DFFX1 two_reg( .D (n143),  .CLK 
+  (clock),  .Q (two));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1116: DFFX1 three_reg( .D (n142),  .CLK 
+  (clock),  .Q (three));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1117: DFFX1 wr_en_buf_reg( .D (n224),  
+  .CLK (clock),  .Q (wr_en));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1118: DFFX1 en_rng_buf_reg( .D (n129),  
+  .CLK (clock),  .Q (en_rng));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1119: DFFX1 \_right_reg[6] ( .D (n202),  
+  .CLK (clock),  .Q (_right[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1120: DFFX1 \_right_reg[5] ( .D (n203),  
+  .CLK (clock),  .Q (_right[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1121: DFFX1 \_right_reg[4] ( .D (n204),  
+  .CLK (clock),  .Q (_right[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1122: DFFX1 \_right_reg[3] ( .D (n205),  
+  .CLK (clock),  .Q (_right[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1123: DFFX1 \_right_reg[2] ( .D (n206),  
+  .CLK (clock),  .Q (_right[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1124: DFFX1 \_right_reg[1] ( .D (n207),  
+  .CLK (clock),  .Q (_right[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1141: DFFX1 \nexthop_buf_reg[6] ( .D 
+  (n122),  .CLK (clock),  .Q (nexthop[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1142: DFFX1 \nexthop_buf_reg[0] ( .D 
+  (n128),  .CLK (clock),  .Q (nexthop[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1143: DFFX1 start_rngAddress_buf_reg( .D 
+  (n241),  .CLK (clock),  .Q (start_rngAddress));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1145: DFFX1 \which_buf_reg[15] ( .D 
+  (n242),  .CLK (clock),  .Q (which[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1146: DFFX1 \which_buf_reg[14] ( .D 
+  (n243),  .CLK (clock),  .Q (which[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1147: DFFX1 \which_buf_reg[13] ( .D 
+  (n244),  .CLK (clock),  .Q (which[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1148: DFFX1 \which_buf_reg[12] ( .D 
+  (n245),  .CLK (clock),  .Q (which[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1149: DFFX1 \which_buf_reg[11] ( .D 
+  (n246),  .CLK (clock),  .Q (which[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1150: DFFX1 \which_buf_reg[10] ( .D 
+  (n247),  .CLK (clock),  .Q (which[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1151: DFFX1 \which_buf_reg[9] ( .D 
+  (n248),  .CLK (clock),  .Q (which[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1152: DFFX1 \which_buf_reg[8] ( .D 
+  (n249),  .CLK (clock),  .Q (which[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1153: DFFX1 \which_buf_reg[7] ( .D 
+  (n250),  .CLK (clock),  .Q (which[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1154: DFFX1 \which_buf_reg[6] ( .D 
+  (n251),  .CLK (clock),  .Q (which[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1155: DFFX1 \which_buf_reg[5] ( .D 
+  (n252),  .CLK (clock),  .Q (which[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1156: DFFX1 \which_buf_reg[4] ( .D 
+  (n253),  .CLK (clock),  .Q (which[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1157: DFFX1 \which_buf_reg[3] ( .D 
+  (n254),  .CLK (clock),  .Q (which[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1158: DFFX1 \which_buf_reg[2] ( .D 
+  (n255),  .CLK (clock),  .Q (which[2]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1159: DFFX1 \which_buf_reg[1] ( .D 
+  (n256),  .CLK (clock),  .Q (which[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1160: DFFX1 \which_buf_reg[0] ( .D 
+  (n273),  .CLK (clock),  .Q (which[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1161: DFFX1 
+  \betterNeighborCount_buf_reg[15] ( .D (n257),  .CLK (clock),  .Q 
+  (betterNeighborCount[15]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1163: DFFX1 
+  \betterNeighborCount_buf_reg[14] ( .D (n258),  .CLK (clock),  .Q 
+  (betterNeighborCount[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1165: DFFX1 
+  \betterNeighborCount_buf_reg[13] ( .D (n259),  .CLK (clock),  .Q 
+  (betterNeighborCount[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1167: DFFX1 
+  \betterNeighborCount_buf_reg[12] ( .D (n260),  .CLK (clock),  .Q 
+  (betterNeighborCount[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1169: DFFX1 
+  \betterNeighborCount_buf_reg[11] ( .D (n261),  .CLK (clock),  .Q 
+  (betterNeighborCount[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1171: DFFX1 
+  \betterNeighborCount_buf_reg[10] ( .D (n262),  .CLK (clock),  .Q 
+  (betterNeighborCount[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1173: DFFX1 
+  \betterNeighborCount_buf_reg[9] ( .D (n263),  .CLK (clock),  .Q 
+  (betterNeighborCount[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1175: DFFX1 
+  \betterNeighborCount_buf_reg[8] ( .D (n264),  .CLK (clock),  .Q 
+  (betterNeighborCount[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1177: DFFX1 
+  \betterNeighborCount_buf_reg[7] ( .D (n265),  .CLK (clock),  .Q 
+  (betterNeighborCount[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1179: DFFX1 
+  \betterNeighborCount_buf_reg[6] ( .D (n266),  .CLK (clock),  .Q 
+  (betterNeighborCount[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1181: DFFX1 
+  \betterNeighborCount_buf_reg[5] ( .D (n267),  .CLK (clock),  .Q 
+  (betterNeighborCount[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1183: DFFX1 
+  \betterNeighborCount_buf_reg[4] ( .D (n268),  .CLK (clock),  .Q 
+  (betterNeighborCount[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1185: DFFX1 
+  \betterNeighborCount_buf_reg[3] ( .D (n269),  .CLK (clock),  .Q 
+  (betterNeighborCount[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_winnerPolicy.v", 1187: DFFX1 
+  \betterNeighborCount_buf_reg[2] ( .D (n270),  .CLK (clock),  .Q 
+  (betterNeighborCount[2]));
+  
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "../mapped/winnerPolicy.sdf"
+   ***    Annotation scope: tb_winnerPolicy.rng1
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Mar 18 12:34:09 2018
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 16
+  SDF Warning: Instance tb_winnerPolicy.rng1 of type "winnerPolicy" cannot be 
+  found .
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2852
+  SDF Warning: Instance U743 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2862
+  SDF Warning: Instance U742 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2872
+  SDF Warning: Instance U741 of type "AND2X1" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2882
+  SDF Warning: Instance U740 of type "INVX0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2891
+  SDF Warning: Instance U739 of type "NAND2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2901
+  SDF Warning: Instance U738 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2911
+  SDF Warning: Instance U737 of type "NAND2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2921
+  SDF Warning: Instance U736 of type "INVX0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2930
+  SDF Warning: Instance U735 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+          Total errors: 0
+          Total warnings: 1012
+   ***    SDF annotation completed: Sun Mar 18 12:34:09 2018
+
+
+Starting vcs inline pass...
+330 modules and 26 UDPs read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module tb_winnerPolicy because:
+	This module or some inlined child module(s) has/have been modified.
+make[1]: Entering directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+ld -r -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+ld -r -o pre_vcsobj_1_2.o --whole-archive pre_vcsobj_1_2.a --no-whole-archive
+ld -r -o pre_vcsobj_1_3.o --whole-archive pre_vcsobj_1_3.a --no-whole-archive
+ld -r -o pre_vcsobj_1_4.o --whole-archive pre_vcsobj_1_4.a --no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv     -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o \
+5NrIB_d.o SIM_l.o    pre_vcsobj_1_1.o pre_vcsobj_1_2.o pre_vcsobj_1_3.o pre_vcsobj_1_4.o \
+rmapats_mop.o rmapats.o       /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libzerosoft_rt_stubs.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so     /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsnew.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsucli.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libuclinative.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o -ldl -lm \
+-lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+Command: ./simv +neg_tchk -a mapped_winnerPolicy.log
+Chronologic VCS simulator copyright 1991-2013
+Contains Synopsys proprietary information.
+Compiler version H-2013.06-SP1_Full64; Runtime version H-2013.06-SP1_Full64;  Mar 18 12:34 2018
+Doing SDF annotation ...... Done
+VCD+ Writer H-2013.06-SP1_Full64 Copyright (c) 1991-2013 by Synopsys Inc.
+$finish called from file "tb_winnerPolicy.v", line 146.
+$finish at simulation time               600000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 600000 ps
+CPU Time:      0.540 seconds;       Data structure size:   1.0Mb
+Sun Mar 18 12:34:16 2018
+CPU time: 1.971 seconds to compile + .014 seconds to elab + .423 seconds to link + .668 seconds in simulation

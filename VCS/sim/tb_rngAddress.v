@@ -3,8 +3,8 @@
 
 module tb_rngAddress();
 	reg clock, nreset, start_rng_address;
-	reg [15:0] betterNeighborCount, which, rng_out_4bit;
-	wire [15:0] rng_address_out, rng_out;
+	reg [15:0] betterNeighborCount, rng_out_4bit;
+	wire [15:0] rng_address_out;
 	wire done_rng_address;
 
 	rngAddress rngAddress1(clock, nreset, start_rng_address, betterNeighborCount, rng_out_4bit, rng_address_out, done_rng_address);

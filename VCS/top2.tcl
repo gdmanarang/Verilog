@@ -1,0 +1,19 @@
+set_app_var search_path "$search_path mapped lib cons rtl sim"
+set_app_var target_library CORE65GPSVT_nom_1.00V_25C.db
+set_app_var link_library "* $target_library"
+
+set power_enable_analysis true
+set power_analysis_mode time_based
+
+read_verilog "top_mapped.v"
+current_design top
+# define simulation environment
+link
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+create_clock -period 10 -waveform [list 0 5] -name clock [get_ports clock]
+read_vcd "tb_top.vpd" -strip_path "tb_top/t1"
+check_power
+set_power_analysis_options -waveform_format fsdb -waveform_output vcd
+update_power
+report_power > filter_pt_power.rpt
+

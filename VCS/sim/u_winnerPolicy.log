@@ -1,0 +1,460 @@
+Command: vcs ../rtl/mem.v ../rtl/randomGenerator.v ../rtl/rngAddress.v ../rtl/winnerPolicy.v \
+../lib/saed90nm.v tb_winnerPolicy.v -full64 -debug_pp +neg_tchk -R -l u_winnerPolicy.log \
+
+                         Chronologic VCS (TM)
+       Version H-2013.06-SP1_Full64 -- Sun Mar 18 12:07:05 2018
+               Copyright (c) 1991-2013 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../rtl/mem.v'
+Parsing design file '../rtl/randomGenerator.v'
+Parsing design file '../rtl/rngAddress.v'
+Parsing design file '../rtl/winnerPolicy.v'
+Parsing design file '../lib/saed90nm.v'
+Parsing design file 'tb_winnerPolicy.v'
+Top Level Modules:
+       AND2X1
+       AND2X2
+       AND2X4
+       AND3X1
+       AND3X2
+       AND3X4
+       AND4X1
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X1
+       AO21X2
+       AO221X1
+       AO221X2
+       AO222X1
+       AO222X2
+       AO22X1
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X1
+       AOI21X2
+       AOI221X1
+       AOI221X2
+       AOI222X1
+       AOI222X2
+       AOI22X1
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX1
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX1
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX1
+       DFFNX2
+       DFFSSRX1
+       DFFSSRX2
+       DFFX1
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX1
+       FADDX2
+       HADDX1
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX0
+       INVX16
+       INVX1
+       INVX2
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX1
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X1
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X0
+       NAND2X1
+       NAND2X2
+       NAND2X4
+       NAND3X0
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X0
+       NAND4X1
+       NBUFFX16
+       NBUFFX2
+       NBUFFX32
+       NBUFFX4
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X0
+       NOR2X1
+       NOR2X2
+       NOR2X4
+       NOR3X0
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X0
+       NOR4X1
+       OA21X1
+       OA21X2
+       OA221X1
+       OA221X2
+       OA222X1
+       OA222X2
+       OA22X1
+       OA22X2
+       OAI21X1
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X1
+       OAI22X2
+       OR2X1
+       OR2X2
+       OR2X4
+       OR3X1
+       OR3X2
+       OR3X4
+       OR4X1
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX1
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X1
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X1
+       XOR2X2
+       XOR3X1
+       XOR3X2
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       tb_winnerPolicy
+TimeScale is 1 ps / 1 ps
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "../mapped/winnerPolicy.sdf"
+   ***    Annotation scope: tb_winnerPolicy.rng1
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Mar 18 12:07:07 2018
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 16
+  SDF Warning: Instance tb_winnerPolicy.rng1 of type "winnerPolicy" cannot be 
+  found .
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2852
+  SDF Warning: Instance U743 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2862
+  SDF Warning: Instance U742 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2872
+  SDF Warning: Instance U741 of type "AND2X1" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2882
+  SDF Warning: Instance U740 of type "INVX0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2891
+  SDF Warning: Instance U739 of type "NAND2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2901
+  SDF Warning: Instance U738 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2911
+  SDF Warning: Instance U737 of type "NAND2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2921
+  SDF Warning: Instance U736 of type "INVX0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_ICBF] Instance cannot be found
+../mapped/winnerPolicy.sdf, 2930
+  SDF Warning: Instance U735 of type "NOR2X0" cannot be found under  
+  tb_winnerPolicy.rng1
+
+
+          Total errors: 0
+          Total warnings: 1014
+   ***    SDF annotation completed: Sun Mar 18 12:07:07 2018
+
+
+Starting vcs inline pass...
+325 modules and 26 UDPs read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module tb_winnerPolicy because:
+	This module or some inlined child module(s) has/have been modified.
+make[1]: Entering directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+ld -r -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+ld -r -o pre_vcsobj_1_2.o --whole-archive pre_vcsobj_1_2.a --no-whole-archive
+ld -r -o pre_vcsobj_1_3.o --whole-archive pre_vcsobj_1_3.a --no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv     -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o \
+5NrIB_d.o SIM_l.o    pre_vcsobj_1_1.o pre_vcsobj_1_2.o pre_vcsobj_1_3.o  rmapats_mop.o \
+rmapats.o       /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libzerosoft_rt_stubs.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so     /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsnew.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsucli.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libuclinative.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o -ldl -lm \
+-lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+Command: ./simv +neg_tchk -a u_winnerPolicy.log
+Chronologic VCS simulator copyright 1991-2013
+Contains Synopsys proprietary information.
+Compiler version H-2013.06-SP1_Full64; Runtime version H-2013.06-SP1_Full64;  Mar 18 12:07 2018
+Doing SDF annotation ...... Done
+VCD+ Writer H-2013.06-SP1_Full64 Copyright (c) 1991-2013 by Synopsys Inc.
+nexthop, one, two, three:    50,1,1,1
+$finish called from file "tb_winnerPolicy.v", line 146.
+$finish at simulation time               600000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 600000 ps
+CPU Time:      0.480 seconds;       Data structure size:   0.3Mb
+Sun Mar 18 12:07:12 2018
+CPU time: 1.846 seconds to compile + .015 seconds to elab + .400 seconds to link + .609 seconds in simulation

@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+
 module amIDestination ( clock, nrst, en, start, MY_NODE_ID, destinationID, 
         iamDestination, done );
   input [15:0] MY_NODE_ID;

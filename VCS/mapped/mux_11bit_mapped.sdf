@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 1.0")
 (DESIGN "mux_11bit")
-(DATE "Wed Mar 14 16:02:45 2018")
+(DATE "Sat Mar 17 17:25:11 2018")
 (VENDOR "saed90nm_typ")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "I-2013.12")

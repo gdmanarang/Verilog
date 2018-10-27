@@ -107,6 +107,7 @@ module tb_winnerPolicy();
         #100 start_winnerPolicy = 1;
   */
 
+/*
 	epsilon = 2;
 	epsilon_step = 1;
 	mybest = 5;
@@ -116,6 +117,18 @@ module tb_winnerPolicy();
 	MY_NODE_ID = 5;
 	state = 3;
       	#100 start_winnerPolicy = 1;
+*/
+
+	epsilon = 2;
+	epsilon_step = 1;
+	mybest = 20;
+	bestvalue = 20;
+	besthop = 50;
+	bestneighborID = 4;   
+	MY_NODE_ID = 5;
+	state = 3;
+      	#100 start_winnerPolicy = 1;
+
 	end
 
     // Clock

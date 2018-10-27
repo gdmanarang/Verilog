@@ -1,0 +1,1157 @@
+Command: vcs ../mapped/mapped_rngAddress.v ../lib/saed90nm.v tb_rngAddress.v -full64 \
+-debug_pp +neg_tchk -R -l mapped_rngAddress.log
+                         Chronologic VCS (TM)
+       Version H-2013.06-SP1_Full64 -- Sun Mar 18 12:25:31 2018
+               Copyright (c) 1991-2013 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../mapped/mapped_rngAddress.v'
+Parsing design file '../lib/saed90nm.v'
+Parsing design file 'tb_rngAddress.v'
+Top Level Modules:
+       AND2X2
+       AND2X4
+       AND3X1
+       AND3X2
+       AND3X4
+       AND4X1
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X2
+       AO221X2
+       AO222X2
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X1
+       AOI21X2
+       AOI221X1
+       AOI221X2
+       AOI222X2
+       AOI22X1
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX1
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX1
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX1
+       DFFNX2
+       DFFSSRX2
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX2
+       HADDX1
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX16
+       INVX1
+       INVX2
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX1
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X1
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X0
+       NAND2X2
+       NAND2X4
+       NAND3X0
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X0
+       NAND4X1
+       NBUFFX16
+       NBUFFX2
+       NBUFFX32
+       NBUFFX4
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X1
+       NOR2X2
+       NOR2X4
+       NOR3X0
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X0
+       NOR4X1
+       OA21X1
+       OA21X2
+       OA221X2
+       OA222X1
+       OA222X2
+       OA22X2
+       OAI21X1
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X1
+       OAI22X2
+       OR2X1
+       OR2X2
+       OR2X4
+       OR3X1
+       OR3X2
+       OR3X4
+       OR4X1
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX1
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X1
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X2
+       XOR3X2
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       tb_rngAddress
+TimeScale is 1 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 115: rngAddress_DW01_sub_0 sub_29( .A 
+  (rng_address),  .B (betterNeighborCount),  .CI (1'b0),  .DIFF ({N37, N36, 
+  N35, N34, N33, N32, N31, N30, N29, N28, N27, N26, N ...
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 118: DFFX1 done_rng_address_buf_reg( .D 
+  (n38),  .CLK (clock),  .Q (done_rng_address));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 120: DFFX1 \state_reg[1] ( .D (n39),  .CLK 
+  (clock),  .Q (state[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 121: DFFX1 \rng_address_buf_reg[14] ( .D 
+  (n24),  .CLK (clock),  .Q (rng_address[14]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 123: DFFX1 \rng_address_buf_reg[13] ( .D 
+  (n25),  .CLK (clock),  .Q (rng_address[13]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 125: DFFX1 \rng_address_buf_reg[12] ( .D 
+  (n26),  .CLK (clock),  .Q (rng_address[12]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 127: DFFX1 \rng_address_buf_reg[11] ( .D 
+  (n27),  .CLK (clock),  .Q (rng_address[11]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 129: DFFX1 \rng_address_buf_reg[10] ( .D 
+  (n28),  .CLK (clock),  .Q (rng_address[10]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 131: DFFX1 \rng_address_buf_reg[9] ( .D 
+  (n29),  .CLK (clock),  .Q (rng_address[9]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 132: DFFX1 \rng_address_buf_reg[8] ( .D 
+  (n30),  .CLK (clock),  .Q (rng_address[8]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 133: DFFX1 \rng_address_buf_reg[7] ( .D 
+  (n31),  .CLK (clock),  .Q (rng_address[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 134: DFFX1 \rng_address_buf_reg[6] ( .D 
+  (n32),  .CLK (clock),  .Q (rng_address[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 135: DFFX1 \rng_address_buf_reg[5] ( .D 
+  (n33),  .CLK (clock),  .Q (rng_address[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 136: DFFX1 \rng_address_buf_reg[4] ( .D 
+  (n34),  .CLK (clock),  .Q (rng_address[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 137: DFFX1 \rng_address_buf_reg[3] ( .D 
+  (n35),  .CLK (clock),  .Q (rng_address[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 142: DFFX1 \rng_address_buf_reg[0] ( .D 
+  (n41),  .CLK (clock),  .Q (rng_address[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/mapped_rngAddress.v", 143: DFFX1 \rng_address_buf_reg[15] ( .D 
+  (n40),  .CLK (clock),  .Q (rng_address[15]));
+  
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "../mapped/rngAddress.sdf"
+   ***    Annotation scope: tb_rngAddress.rngAddress1
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Mar 18 12:25:32 2018
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+          Total errors: 0
+          Total warnings: 0
+   ***    SDF annotation completed: Sun Mar 18 12:25:32 2018
+
+
+Starting vcs inline pass...
+323 modules and 26 UDPs read.
+	However, due to incremental compilation, only 323 modules need to be compiled.
+recompiling module rngAddress_DW01_sub_0 because:
+	This module or some inlined child module(s) has/have been modified.
+recompiling module rngAddress because:
+	This module or some inlined child module(s) has/have been modified.
+recompiling module AND2X1 because:
+	Signal dependencies have changed
+recompiling module AND2X2 because:
+	Signal dependencies have changed
+recompiling module AND2X4 because:
+	Signal dependencies have changed
+recompiling module AND3X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module AND3X2 because:
+	Signal dependencies have changed
+recompiling module AND3X4 because:
+	Signal dependencies have changed
+recompiling module AND4X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module AND4X2 because:
+	Signal dependencies have changed
+recompiling module AND4X4 because:
+	Signal dependencies have changed
+recompiling module ANTENNA because:
+	Signal dependencies have changed
+recompiling module AO21X1 because:
+	Signal dependencies have changed
+recompiling module AO21X2 because:
+	Signal dependencies have changed
+recompiling module AO221X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module AO221X2 because:
+	Signal dependencies have changed
+recompiling module AO222X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module AO222X2 because:
+	Signal dependencies have changed
+recompiling module AO22X1 because:
+	Signal dependencies have changed
+recompiling module AO22X2 because:
+	Signal dependencies have changed
+recompiling module AOBUFX1 because:
+	Signal dependencies have changed
+recompiling module AOBUFX2 because:
+	Signal dependencies have changed
+recompiling module AOBUFX4 because:
+	Signal dependencies have changed
+recompiling module AODFFARX1 because:
+	Signal dependencies have changed
+recompiling module AODFFARX2 because:
+	Signal dependencies have changed
+recompiling module AODFFNARX1 because:
+	Signal dependencies have changed
+recompiling module AODFFNARX2 because:
+	Signal dependencies have changed
+recompiling module AOI21X1 because:
+	Signal dependencies have changed
+recompiling module AOI21X2 because:
+	Signal dependencies have changed
+recompiling module AOI221X1 because:
+	Signal dependencies have changed
+recompiling module AOI221X2 because:
+	Signal dependencies have changed
+recompiling module AOI222X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module AOI222X2 because:
+	Signal dependencies have changed
+recompiling module AOI22X1 because:
+	Signal dependencies have changed
+recompiling module AOI22X2 because:
+	Signal dependencies have changed
+recompiling module AOINVX1 because:
+	Signal dependencies have changed
+recompiling module AOINVX2 because:
+	Signal dependencies have changed
+recompiling module AOINVX4 because:
+	Signal dependencies have changed
+recompiling module BSLEX1 because:
+	Signal dependencies have changed
+recompiling module BSLEX2 because:
+	Signal dependencies have changed
+recompiling module BSLEX4 because:
+	Signal dependencies have changed
+recompiling module BUSKP because:
+	Signal dependencies have changed
+recompiling module CGLNPRX2 because:
+	Signal dependencies have changed
+recompiling module CGLNPRX8 because:
+	Signal dependencies have changed
+recompiling module CGLNPSX16 because:
+	Signal dependencies have changed
+recompiling module CGLNPSX2 because:
+	Signal dependencies have changed
+recompiling module CGLNPSX4 because:
+	Signal dependencies have changed
+recompiling module CGLNPSX8 because:
+	Signal dependencies have changed
+recompiling module CGLPPRX2 because:
+	Signal dependencies have changed
+recompiling module CGLPPRX8 because:
+	Signal dependencies have changed
+50 of 323 modules done
+recompiling module CGLPPSX16 because:
+	Signal dependencies have changed
+recompiling module CGLPPSX2 because:
+	Signal dependencies have changed
+recompiling module CGLPPSX4 because:
+	Signal dependencies have changed
+recompiling module CGLPPSX8 because:
+	Signal dependencies have changed
+recompiling module CLOAD1 because:
+	Signal dependencies have changed
+recompiling module DCAP because:
+	Signal dependencies have changed
+recompiling module DEC24X1 because:
+	Signal dependencies have changed
+recompiling module DEC24X2 because:
+	Signal dependencies have changed
+recompiling module DELLN1X2 because:
+	Signal dependencies have changed
+recompiling module DELLN2X2 because:
+	Signal dependencies have changed
+recompiling module DELLN3X2 because:
+	Signal dependencies have changed
+recompiling module DFFARX1 because:
+	Signal dependencies have changed
+recompiling module DFFARX2 because:
+	Signal dependencies have changed
+recompiling module DFFASRX1 because:
+	Signal dependencies have changed
+recompiling module DFFASRX2 because:
+	Signal dependencies have changed
+recompiling module DFFASX1 because:
+	Signal dependencies have changed
+recompiling module DFFASX2 because:
+	Signal dependencies have changed
+recompiling module DFFNARX1 because:
+	Signal dependencies have changed
+recompiling module DFFNARX2 because:
+	Signal dependencies have changed
+recompiling module DFFNASRNX1 because:
+	Signal dependencies have changed
+recompiling module DFFNASRNX2 because:
+	Signal dependencies have changed
+recompiling module DFFNASRQX1 because:
+	Signal dependencies have changed
+recompiling module DFFNASRQX2 because:
+	Signal dependencies have changed
+recompiling module DFFNASRX1 because:
+	Signal dependencies have changed
+recompiling module DFFNASRX2 because:
+	Signal dependencies have changed
+recompiling module DFFNASX1 because:
+	Signal dependencies have changed
+recompiling module DFFNASX2 because:
+	Signal dependencies have changed
+recompiling module DFFNX1 because:
+	Signal dependencies have changed
+recompiling module DFFNX2 because:
+	Signal dependencies have changed
+recompiling module DFFSSRX1 because:
+	This module or some inlined child module(s) has/have been modified.
+recompiling module DFFSSRX2 because:
+	Signal dependencies have changed
+recompiling module DFFX1 because:
+	Signal dependencies have changed
+recompiling module DFFX2 because:
+	Signal dependencies have changed
+recompiling module DHFILLHLH2 because:
+	Signal dependencies have changed
+recompiling module DHFILLHLHLS11 because:
+	Signal dependencies have changed
+recompiling module DHFILLLHL2 because:
+	Signal dependencies have changed
+recompiling module FADDX1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module FADDX2 because:
+	Signal dependencies have changed
+recompiling module HADDX1 because:
+	Signal dependencies have changed
+recompiling module HADDX2 because:
+	Signal dependencies have changed
+recompiling module HEAD2X16 because:
+	Signal dependencies have changed
+recompiling module HEAD2X2 because:
+	Signal dependencies have changed
+recompiling module HEAD2X32 because:
+	Signal dependencies have changed
+recompiling module HEAD2X4 because:
+	Signal dependencies have changed
+recompiling module HEAD2X8 because:
+	Signal dependencies have changed
+recompiling module HEADX16 because:
+	Signal dependencies have changed
+recompiling module HEADX2 because:
+	Signal dependencies have changed
+recompiling module HEADX32 because:
+	Signal dependencies have changed
+recompiling module HEADX4 because:
+	Signal dependencies have changed
+recompiling module HEADX8 because:
+	Signal dependencies have changed
+100 of 323 modules done
+recompiling module IBUFFX16 because:
+	Signal dependencies have changed
+recompiling module IBUFFX2 because:
+	Signal dependencies have changed
+recompiling module IBUFFX32 because:
+	Signal dependencies have changed
+recompiling module IBUFFX4 because:
+	Signal dependencies have changed
+recompiling module IBUFFX8 because:
+	Signal dependencies have changed
+recompiling module INVX0 because:
+	Signal dependencies have changed
+recompiling module INVX16 because:
+	Signal dependencies have changed
+recompiling module INVX1 because:
+	Signal dependencies have changed
+recompiling module INVX2 because:
+	Signal dependencies have changed
+recompiling module INVX32 because:
+	Signal dependencies have changed
+recompiling module INVX4 because:
+	Signal dependencies have changed
+recompiling module INVX8 because:
+	Signal dependencies have changed
+recompiling module ISOLANDX1 because:
+	Signal dependencies have changed
+recompiling module ISOLANDX2 because:
+	Signal dependencies have changed
+recompiling module ISOLANDX4 because:
+	Signal dependencies have changed
+recompiling module ISOLANDX8 because:
+	Signal dependencies have changed
+recompiling module ISOLORX1 because:
+	Signal dependencies have changed
+recompiling module ISOLORX2 because:
+	Signal dependencies have changed
+recompiling module ISOLORX4 because:
+	Signal dependencies have changed
+recompiling module ISOLORX8 because:
+	Signal dependencies have changed
+recompiling module LARX1 because:
+	Signal dependencies have changed
+recompiling module LARX2 because:
+	Signal dependencies have changed
+recompiling module LASRNX1 because:
+	Signal dependencies have changed
+recompiling module LASRNX2 because:
+	Signal dependencies have changed
+recompiling module LASRQX1 because:
+	Signal dependencies have changed
+recompiling module LASRQX2 because:
+	Signal dependencies have changed
+recompiling module LASRX1 because:
+	Signal dependencies have changed
+recompiling module LASRX2 because:
+	Signal dependencies have changed
+recompiling module LASX1 because:
+	Signal dependencies have changed
+recompiling module LASX2 because:
+	Signal dependencies have changed
+recompiling module LATCHX1 because:
+	Signal dependencies have changed
+recompiling module LATCHX2 because:
+	Signal dependencies have changed
+recompiling module LNANDX1 because:
+	Signal dependencies have changed
+recompiling module LNANDX2 because:
+	Signal dependencies have changed
+recompiling module LSDNENX1 because:
+	Signal dependencies have changed
+recompiling module LSDNENX2 because:
+	Signal dependencies have changed
+recompiling module LSDNENX4 because:
+	Signal dependencies have changed
+recompiling module LSDNENX8 because:
+	Signal dependencies have changed
+recompiling module LSDNENCLX1 because:
+	Signal dependencies have changed
+recompiling module LSDNENCLX2 because:
+	Signal dependencies have changed
+recompiling module LSDNENCLX4 because:
+	Signal dependencies have changed
+recompiling module LSDNENCLX8 because:
+	Signal dependencies have changed
+recompiling module LSDNX1 because:
+	Signal dependencies have changed
+recompiling module LSDNX2 because:
+	Signal dependencies have changed
+recompiling module LSDNX4 because:
+	Signal dependencies have changed
+recompiling module LSDNX8 because:
+	Signal dependencies have changed
+recompiling module LSUPENX1 because:
+	Signal dependencies have changed
+recompiling module LSUPENX2 because:
+	Signal dependencies have changed
+recompiling module LSUPENX4 because:
+	Signal dependencies have changed
+recompiling module LSUPENX8 because:
+	Signal dependencies have changed
+150 of 323 modules done
+recompiling module LSUPENCLX1 because:
+	Signal dependencies have changed
+recompiling module LSUPENCLX2 because:
+	Signal dependencies have changed
+recompiling module LSUPENCLX4 because:
+	Signal dependencies have changed
+recompiling module LSUPENCLX8 because:
+	Signal dependencies have changed
+recompiling module LSUPX1 because:
+	Signal dependencies have changed
+recompiling module LSUPX2 because:
+	Signal dependencies have changed
+recompiling module LSUPX4 because:
+	Signal dependencies have changed
+recompiling module LSUPX8 because:
+	Signal dependencies have changed
+recompiling module MUX21X1 because:
+	Signal dependencies have changed
+recompiling module MUX21X2 because:
+	Signal dependencies have changed
+recompiling module MUX41X1 because:
+	Signal dependencies have changed
+recompiling module MUX41X2 because:
+	Signal dependencies have changed
+recompiling module NAND2X0 because:
+	Signal dependencies have changed
+recompiling module NAND2X1 because:
+	Signal dependencies have changed
+recompiling module NAND2X2 because:
+	Signal dependencies have changed
+recompiling module NAND2X4 because:
+	Signal dependencies have changed
+recompiling module NAND3X0 because:
+	Signal dependencies have changed
+recompiling module NAND3X1 because:
+	Signal dependencies have changed
+recompiling module NAND3X2 because:
+	Signal dependencies have changed
+recompiling module NAND3X4 because:
+	Signal dependencies have changed
+recompiling module NAND4X0 because:
+	Signal dependencies have changed
+recompiling module NAND4X1 because:
+	Signal dependencies have changed
+recompiling module NBUFFX16 because:
+	Signal dependencies have changed
+recompiling module NBUFFX2 because:
+	Signal dependencies have changed
+recompiling module NBUFFX32 because:
+	Signal dependencies have changed
+recompiling module NBUFFX4 because:
+	Signal dependencies have changed
+recompiling module NBUFFX8 because:
+	Signal dependencies have changed
+recompiling module NMT1 because:
+	Signal dependencies have changed
+recompiling module NMT2 because:
+	Signal dependencies have changed
+recompiling module NMT3 because:
+	Signal dependencies have changed
+recompiling module NOR2X0 because:
+	Signal dependencies have changed
+recompiling module NOR2X1 because:
+	Signal dependencies have changed
+recompiling module NOR2X2 because:
+	Signal dependencies have changed
+recompiling module NOR2X4 because:
+	Signal dependencies have changed
+recompiling module NOR3X0 because:
+	Signal dependencies have changed
+recompiling module NOR3X1 because:
+	Signal dependencies have changed
+recompiling module NOR3X2 because:
+	Signal dependencies have changed
+recompiling module NOR3X4 because:
+	Signal dependencies have changed
+recompiling module NOR4X0 because:
+	Signal dependencies have changed
+recompiling module NOR4X1 because:
+	Signal dependencies have changed
+recompiling module OA21X1 because:
+	Signal dependencies have changed
+recompiling module OA21X2 because:
+	Signal dependencies have changed
+recompiling module OA221X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module OA221X2 because:
+	Signal dependencies have changed
+recompiling module OA222X1 because:
+	Signal dependencies have changed
+recompiling module OA222X2 because:
+	Signal dependencies have changed
+recompiling module OA22X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module OA22X2 because:
+	Signal dependencies have changed
+recompiling module OAI21X1 because:
+	Signal dependencies have changed
+recompiling module OAI21X2 because:
+	Signal dependencies have changed
+200 of 323 modules done
+recompiling module OAI221X1 because:
+	Signal dependencies have changed
+recompiling module OAI221X2 because:
+	Signal dependencies have changed
+recompiling module OAI222X1 because:
+	Signal dependencies have changed
+recompiling module OAI222X2 because:
+	Signal dependencies have changed
+recompiling module OAI22X1 because:
+	Signal dependencies have changed
+recompiling module OAI22X2 because:
+	Signal dependencies have changed
+recompiling module OR2X1 because:
+	Signal dependencies have changed
+	Moudule connection has changed
+recompiling module OR2X2 because:
+	Signal dependencies have changed
+recompiling module OR2X4 because:
+	Signal dependencies have changed
+recompiling module OR3X1 because:
+	Signal dependencies have changed
+recompiling module OR3X2 because:
+	Signal dependencies have changed
+recompiling module OR3X4 because:
+	Signal dependencies have changed
+recompiling module OR4X1 because:
+	Signal dependencies have changed
+recompiling module OR4X2 because:
+	Signal dependencies have changed
+recompiling module OR4X4 because:
+	Signal dependencies have changed
+recompiling module PGX1 because:
+	Signal dependencies have changed
+recompiling module PGX2 because:
+	Signal dependencies have changed
+recompiling module PGX4 because:
+	Signal dependencies have changed
+recompiling module PMT1 because:
+	Signal dependencies have changed
+recompiling module PMT2 because:
+	Signal dependencies have changed
+recompiling module PMT3 because:
+	Signal dependencies have changed
+recompiling module SDFFARX1 because:
+	Signal dependencies have changed
+recompiling module SDFFARX2 because:
+	Signal dependencies have changed
+recompiling module SDFFASRSX1 because:
+	Signal dependencies have changed
+recompiling module SDFFASRSX2 because:
+	Signal dependencies have changed
+recompiling module SDFFASRX1 because:
+	Signal dependencies have changed
+recompiling module SDFFASRX2 because:
+	Signal dependencies have changed
+recompiling module SDFFASX1 because:
+	Signal dependencies have changed
+recompiling module SDFFASX2 because:
+	Signal dependencies have changed
+recompiling module SDFFNARX1 because:
+	Signal dependencies have changed
+recompiling module SDFFNARX2 because:
+	Signal dependencies have changed
+recompiling module SDFFNASRX1 because:
+	Signal dependencies have changed
+recompiling module SDFFNASRX2 because:
+	Signal dependencies have changed
+recompiling module SDFFNASX1 because:
+	Signal dependencies have changed
+recompiling module SDFFNASX2 because:
+	Signal dependencies have changed
+recompiling module SDFFNX1 because:
+	Signal dependencies have changed
+recompiling module SDFFNX2 because:
+	Signal dependencies have changed
+recompiling module SDFFSSRX1 because:
+	Signal dependencies have changed
+recompiling module SDFFSSRX2 because:
+	Signal dependencies have changed
+recompiling module SDFFX1 because:
+	Signal dependencies have changed
+recompiling module SDFFX2 because:
+	Signal dependencies have changed
+recompiling module SHFILL2 because:
+	Signal dependencies have changed
+recompiling module SHFILL3 because:
+	Signal dependencies have changed
+recompiling module SHFILL1 because:
+	Signal dependencies have changed
+recompiling module SHFILL64 because:
+	Signal dependencies have changed
+recompiling module SHFILL128 because:
+	Signal dependencies have changed
+recompiling module TIEH because:
+	Signal dependencies have changed
+recompiling module TIEL because:
+	Signal dependencies have changed
+recompiling module TNBUFFX16 because:
+	Signal dependencies have changed
+recompiling module TNBUFFX1 because:
+	Signal dependencies have changed
+250 of 323 modules done
+recompiling module TNBUFFX2 because:
+	Signal dependencies have changed
+recompiling module TNBUFFX32 because:
+	Signal dependencies have changed
+recompiling module TNBUFFX4 because:
+	Signal dependencies have changed
+recompiling module TNBUFFX8 because:
+	Signal dependencies have changed
+recompiling module XNOR2X1 because:
+	Signal dependencies have changed
+recompiling module XNOR2X2 because:
+	Signal dependencies have changed
+recompiling module XNOR3X1 because:
+	Signal dependencies have changed
+recompiling module XNOR3X2 because:
+	Signal dependencies have changed
+recompiling module XOR2X1 because:
+	Signal dependencies have changed
+recompiling module XOR2X2 because:
+	Signal dependencies have changed
+recompiling module XOR3X1 because:
+	Signal dependencies have changed
+recompiling module XOR3X2 because:
+	Signal dependencies have changed
+recompiling module RDFFARX1 because:
+	Signal dependencies have changed
+recompiling module RDFFARX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNARX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNARX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFARX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFARX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNARX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNARX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNX2 because:
+	Signal dependencies have changed
+recompiling module RDFFX1 because:
+	Signal dependencies have changed
+recompiling module RDFFX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASX2 because:
+	Signal dependencies have changed
+recompiling module RDFFSRARX1 because:
+	Signal dependencies have changed
+recompiling module RDFFSRARX2 because:
+	Signal dependencies have changed
+recompiling module RDFFSRASRX1 because:
+	Signal dependencies have changed
+recompiling module RDFFSRASRX2 because:
+	Signal dependencies have changed
+recompiling module RDFFSRASX1 because:
+	Signal dependencies have changed
+recompiling module RDFFSRASX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRARX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRARX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRNX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRNX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRQX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASRQX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRARX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRARX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRASRX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRASRX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRARX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRARX2 because:
+	Signal dependencies have changed
+300 of 323 modules done
+recompiling module RDFFNSRASRQX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASRQX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASRNX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASRNX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASRX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRASRX2 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRX1 because:
+	Signal dependencies have changed
+recompiling module RDFFNSRX2 because:
+	Signal dependencies have changed
+recompiling module RDFFSRSSRX1 because:
+	Signal dependencies have changed
+recompiling module RDFFSRSSRX2 because:
+	Signal dependencies have changed
+recompiling module RDFFSRX1 because:
+	Signal dependencies have changed
+recompiling module RDFFSRX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRASX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFNSRX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRASX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRASX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRSSRX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRSSRX2 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRX1 because:
+	Signal dependencies have changed
+recompiling module RSDFFSRX2 because:
+	Signal dependencies have changed
+recompiling module tb_rngAddress because:
+	Cross module references have been changed, added or deleted.
+	Signal dependencies have changed
+	Some child instantiation or references (or ports) have been changed.
+All of 323 modules done
+make[1]: Entering directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+ld -r -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv     -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o \
+5NrIB_d.o SIM_l.o    pre_vcsobj_1_1.o  rmapats_mop.o rmapats.o       /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libzerosoft_rt_stubs.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so     /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsnew.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsucli.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libuclinative.so \
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o -ldl -lm \
+-lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/nfs/home/rrmina/Desktop/VCS/sim/csrc'
+Command: ./simv +neg_tchk -a mapped_rngAddress.log
+Chronologic VCS simulator copyright 1991-2013
+Contains Synopsys proprietary information.
+Compiler version H-2013.06-SP1_Full64; Runtime version H-2013.06-SP1_Full64;  Mar 18 12:25 2018
+Doing SDF annotation ...... Done
+VCD+ Writer H-2013.06-SP1_Full64 Copyright (c) 1991-2013 by Synopsys Inc.
+$finish called from file "tb_rngAddress.v", line 38.
+$finish at simulation time               500000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 500000 ps
+CPU Time:      0.500 seconds;       Data structure size:   0.4Mb
+Sun Mar 18 12:25:45 2018
+CPU time: 6.115 seconds to compile + .171 seconds to elab + .533 seconds to link + .633 seconds in simulation

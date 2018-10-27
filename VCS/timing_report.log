@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mem
+Version: F-2011.09-SP5-3
+Date   : Thu May 24 15:54:23 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_1.00V_25C   Library: CORE65LPLVT
+Wire Load Model Mode: enclosed
+
+  Startpoint: address[10]
+              (input port clocked by clock)
+  Endpoint: data_out[0]
+            (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mem                area_312Kto390K       CORE65LPLVT
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     6.00       6.00 f
+  address[10] (in)                         0.00       6.00 f
+  U56925/Z (HS65_LL_NOR2AX3)               0.09       6.09 f
+  U56921/Z (HS65_LL_AND2X4)                0.13       6.21 f
+  U71244/Z (HS65_LL_BFX9)                  0.12       6.34 f
+  U67974/Z (HS65_LL_NAND2X7)               0.13       6.46 r
+  U77898/Z (HS65_LL_OAI22X6)               0.08       6.54 f
+  U78437/Z (HS65_LL_AOI212X4)              0.07       6.62 r
+  U78434/Z (HS65_LL_NOR4ABX2)              0.12       6.74 r
+  U72835/Z (HS65_LL_NOR4ABX2)              0.13       6.87 r
+  U72771/Z (HS65_LL_NOR4ABX2)              0.14       7.02 r
+  U78277/Z (HS65_LL_NAND3X5)               0.06       7.08 f
+  U78274/Z (HS65_LL_NOR3X4)                0.05       7.13 r
+  U79042/Z (HS65_LL_NAND4ABX3)             0.06       7.19 f
+  U72707/Z (HS65_LL_NOR4ABX2)              0.09       7.28 r
+  U73027/Z (HS65_LL_NAND4ABX3)             0.08       7.35 f
+  U72739/Z (HS65_LL_NOR4ABX2)              0.09       7.44 r
+  U79115/Z (HS65_LL_NAND4ABX3)             0.08       7.51 f
+  U72995/Z (HS65_LL_NAND4ABX3)             0.11       7.63 f
+  U77835/Z (HS65_LL_NOR4ABX2)              0.10       7.72 r
+  U77834/Z (HS65_LL_OAI212X5)              0.08       7.80 f
+  U78050/Z (HS65_LL_NOR4ABX2)              0.08       7.89 r
+  U73123/Z (HS65_LL_NAND4ABX3)             0.07       7.95 f
+  data_out[0] (out)                        0.00       7.95 f
+  data arrival time                                   7.95
+
+  clock clock (rise edge)                 20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -3.00      17.00
+  output external delay                   -6.00      11.00
+  data required time                                 11.00
+  -----------------------------------------------------------
+  data required time                                 11.00
+  data arrival time                                  -7.95
+  -----------------------------------------------------------
+  slack (MET)                                         3.05
+
+
+1

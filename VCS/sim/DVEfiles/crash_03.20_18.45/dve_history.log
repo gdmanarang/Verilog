@@ -1,0 +1,92 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /nfs/home/rrmina/Desktop/VCS/sim/tb_top.vpd -design V1} {gui_open_db -file /nfs/home/rrmina/Desktop/top-with-enable/tb_top.vpd -design V1} {gui_open_db -file /nfs/home/rrmina/Desktop/top-with-enable/tb_top.vpd -design V3} {gui_open_db -file /nfs/home/rrmina/Desktop/VCS/sim/tb_top.vpd -design V2} {gui_open_db -file /nfs/home/rrmina/Desktop/VCS/sim/tb_winnerPolicy.vpd -design V3}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1630
+gui_set_state_value -category Layout -key child_console_size_y -value 174
+gui_set_state_value -category Layout -key child_data_coltype -value 108
+gui_set_state_value -category Layout -key child_data_colvalue -value 168
+gui_set_state_value -category Layout -key child_data_colvariable -value 208
+gui_set_state_value -category Layout -key child_data_size_x -value 485
+gui_set_state_value -category Layout -key child_data_size_y -value 675
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 119
+gui_set_state_value -category Layout -key child_hier_size_y -value 675
+gui_set_state_value -category Layout -key child_list_down -value 199
+gui_set_state_value -category Layout -key child_list_right -value 440
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1354
+gui_set_state_value -category Layout -key child_schematic_size_y -value 724
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1029
+gui_set_state_value -category Layout -key child_source_size_y -value 670
+gui_set_state_value -category Layout -key child_wave_colname -value 226
+gui_set_state_value -category Layout -key child_wave_colvalue -value 226
+gui_set_state_value -category Layout -key child_wave_left -value 457
+gui_set_state_value -category Layout -key child_wave_right -value 1113
+gui_set_state_value -category Layout -key main_pos_x -value 10
+gui_set_state_value -category Layout -key main_pos_y -value 96
+gui_set_state_value -category Layout -key main_size_x -value 1640
+gui_set_state_value -category Layout -key main_size_y -value 1020
+gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_list_child_size_y -value 344
+gui_set_state_value -category Layout -key stand_list_top_pos_x -value 510
+gui_set_state_value -category Layout -key stand_list_top_pos_y -value 155
+gui_set_state_value -category Layout -key stand_list_top_size_x -value 1105
+gui_set_state_value -category Layout -key stand_list_top_size_y -value 650
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 1684
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 893
+gui_set_state_value -category Layout -key stand_source_top_pos_x -value 552
+gui_set_state_value -category Layout -key stand_source_top_pos_y -value 476
+gui_set_state_value -category Layout -key stand_source_top_size_x -value 2231
+gui_set_state_value -category Layout -key stand_source_top_size_y -value 1449
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1580
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 822
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 102
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 95
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1677
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1020
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key Find|m_pFindFrame|m_pFindCombo -value_type string -value mybest_shifted
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd2|DLPane.1|pages|Data.1|hbox|textfilter -value_type string -value {wr_en state neighbor neighbo}
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_top_dock|&Edit|FindCombo -value_type string -value mybest_shifted
+gui_create_state_key -category Widget_History -key TopLevel.2|qt_top_dock|&Edit|FindCombo -value_type string -value mybest_shifted
+gui_create_state_key -category Widget_History -key TopLevel.3|qt_top_dock|&Edit|FindCombo -value_type string -value mybest_shifted
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /nfs/home/rrmina/Desktop/VCS/sim/tb_top.vpd -design V1
+gui_list_select -id Hier.1 -current_item_name tb_top -current_item_type Scope  -selected  { tb_top   }
+gui_list_select -id Data.1 -selected  { {tb_top.mem_data_out[15:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_top.clock tb_top.nrst tb_top.en {tb_top.fsourceID[15:0]} {tb_top.fbatteryStat[15:0]} {tb_top.fValue[15:0]} {tb_top.fclusterID[15:0]} {tb_top.fdestinationID[15:0]} tb_top.done_reward {tb_top.reward_out[15:0]} {tb_top.mem_data_out[15:0]} {tb_top.mem_data_in[15:0]} {tb_top.address[10:0]} tb_top.wr_en } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { {tb_top.reward_out[15:0]}   }
+gui_marker_move -id  Wave.1 C1 5850053
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2

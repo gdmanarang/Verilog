@@ -45,3 +45,26 @@ s:
 
 top:
 	dc_shell -f top.tcl -output_log_file top.log
+
+topp:
+	primetime -f top2.tcl
+
+allr:
+	ais
+	aid
+	fsl
+	nsioc
+	fmb
+	bnimc
+	m1
+	m11
+	m16
+	wp
+	rng
+	rnga
+	r
+	lc
+	s
+
+mem:
+	dc_shell -f memory.tcl -output_log_file memory.log

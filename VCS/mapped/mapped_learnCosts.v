@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+
 module learnCosts_DW01_inc_0 ( A, SUM );
   input [15:0] A;
   output [15:0] SUM;
@@ -163,28 +163,28 @@ module learnCosts ( clock, nrst, en, fsourceID, fbatteryStat, fValue,
          n373, n374, n375, n376, n377, n378, n379, n380, n381, n382, n383,
          n384, n385, n386, n387, n388, n389, n390, n391, n392, n393, n394,
          n395, n396, n397, n398, n399, n400, n401, n402, n403, n404,
-         \add_175/carry[10] , \add_175/carry[9] , \add_175/carry[8] ,
-         \add_175/carry[7] , \add_175/carry[6] , \add_175/carry[5] ,
-         \add_175/carry[4] , \add_175/carry[3] , \add_168/carry[10] ,
-         \add_168/carry[9] , \add_168/carry[8] , \add_162/carry[10] ,
-         \add_162/carry[9] , \add_162/carry[8] , \add_162/carry[7] ,
-         \add_162/carry[6] , \add_162/carry[5] , \add_156/carry[10] ,
-         \add_156/carry[9] , \add_156/carry[8] , \add_156/carry[7] ,
-         \add_156/carry[6] , \add_156/carry[5] , \add_150/carry[10] ,
-         \add_150/carry[9] , \add_150/carry[8] , \add_150/carry[7] ,
-         \add_150/carry[6] , \add_150/carry[5] , \add_143/carry[10] ,
-         \add_143/carry[9] , \add_143/carry[8] , \add_143/carry[7] ,
-         \add_143/carry[6] , \add_143/carry[5] , \add_113/carry[10] ,
-         \add_113/carry[9] , \add_113/carry[8] , \add_113/carry[7] ,
-         \add_113/carry[6] , \add_113/carry[5] , \add_107/carry[10] ,
-         \add_107/carry[9] , \add_107/carry[8] , \add_107/carry[7] ,
-         \add_107/carry[6] , \add_107/carry[5] , \add_83/carry[10] ,
-         \add_83/carry[9] , \add_83/carry[8] , \add_83/carry[7] ,
-         \add_83/carry[6] , \add_83/carry[5] , \add_83/carry[4] ,
-         \add_83/carry[3] , \add_71/carry[10] , \add_71/carry[9] ,
-         \add_71/carry[8] , \add_58/carry[10] , \add_58/carry[9] ,
-         \add_58/carry[8] , \add_58/carry[7] , \add_58/carry[6] ,
-         \add_58/carry[5] , \r158/carry[10] , \r158/carry[9] , \r158/carry[8] ,
+         \add_176/carry[10] , \add_176/carry[9] , \add_176/carry[8] ,
+         \add_176/carry[7] , \add_176/carry[6] , \add_176/carry[5] ,
+         \add_176/carry[4] , \add_176/carry[3] , \add_169/carry[10] ,
+         \add_169/carry[9] , \add_169/carry[8] , \add_163/carry[10] ,
+         \add_163/carry[9] , \add_163/carry[8] , \add_163/carry[7] ,
+         \add_163/carry[6] , \add_163/carry[5] , \add_157/carry[10] ,
+         \add_157/carry[9] , \add_157/carry[8] , \add_157/carry[7] ,
+         \add_157/carry[6] , \add_157/carry[5] , \add_151/carry[10] ,
+         \add_151/carry[9] , \add_151/carry[8] , \add_151/carry[7] ,
+         \add_151/carry[6] , \add_151/carry[5] , \add_144/carry[10] ,
+         \add_144/carry[9] , \add_144/carry[8] , \add_144/carry[7] ,
+         \add_144/carry[6] , \add_144/carry[5] , \add_114/carry[10] ,
+         \add_114/carry[9] , \add_114/carry[8] , \add_114/carry[7] ,
+         \add_114/carry[6] , \add_114/carry[5] , \add_108/carry[10] ,
+         \add_108/carry[9] , \add_108/carry[8] , \add_108/carry[7] ,
+         \add_108/carry[6] , \add_108/carry[5] , \add_84/carry[10] ,
+         \add_84/carry[9] , \add_84/carry[8] , \add_84/carry[7] ,
+         \add_84/carry[6] , \add_84/carry[5] , \add_84/carry[4] ,
+         \add_84/carry[3] , \add_72/carry[10] , \add_72/carry[9] ,
+         \add_72/carry[8] , \add_59/carry[10] , \add_59/carry[9] ,
+         \add_59/carry[8] , \add_59/carry[7] , \add_59/carry[6] ,
+         \add_59/carry[5] , \r158/carry[10] , \r158/carry[9] , \r158/carry[8] ,
          \r158/carry[7] , \r158/carry[6] , \r158/carry[5] , n405, n406, n407,
          n408, n409, n410, n411, n412, n413, n414, n415, n416, n417, n418,
          n419, n420, n421, n422, n423, n424, n425, n426, n427, n428, n429,
@@ -627,10 +627,10 @@ module learnCosts ( clock, nrst, en, fsourceID, fbatteryStat, fValue,
   NAND3X0 U375 ( .IN1(n294), .IN2(state[1]), .IN3(n298), .QN(n80) );
   AND3X1 U376 ( .IN1(n68), .IN2(n67), .IN3(state[2]), .Q(n76) );
   NAND3X0 U377 ( .IN1(n294), .IN2(n68), .IN3(n298), .QN(n280) );
-  learnCosts_DW01_inc_0 add_197 ( .A({neighborCount[15:2], N326, N325}), .SUM(
+  learnCosts_DW01_inc_0 add_198 ( .A({neighborCount[15:2], N326, N325}), .SUM(
         {N457, N456, N455, N454, N453, N452, N451, N450, N449, N448, N447, 
         N446, N445, N444, N443, N442}) );
-  learnCosts_DW01_inc_1 add_74 ( .A({n[15:2], N192, N191}), .SUM({N231, N230, 
+  learnCosts_DW01_inc_1 add_75 ( .A({n[15:2], N192, N191}), .SUM({N231, N230, 
         N229, N228, N227, N226, N225, N224, N223, N222, N221, N220, N219, N218, 
         N217, N216}) );
   learnCosts_DW01_inc_2 r160 ( .A({k[15:2], N249, N248}), .SUM({N296, N295, 
@@ -888,197 +888,197 @@ module learnCosts ( clock, nrst, en, fsourceID, fbatteryStat, fValue,
   NOR2X0 U477 ( .IN1(n94), .IN2(n261), .QN(n155) );
   AND3X1 U478 ( .IN1(n298), .IN2(n68), .IN3(n275), .Q(n411) );
   AND3X1 U479 ( .IN1(n298), .IN2(n68), .IN3(n275), .Q(n412) );
-  XOR2X1 U480 ( .IN1(neighborCount[9]), .IN2(\add_156/carry[10] ), .Q(N356) );
-  XOR2X1 U481 ( .IN1(neighborCount[9]), .IN2(\add_162/carry[10] ), .Q(N367) );
-  XNOR2X1 U482 ( .IN1(k[9]), .IN2(\add_83/carry[10] ), .Q(N246) );
+  XOR2X1 U480 ( .IN1(neighborCount[9]), .IN2(\add_157/carry[10] ), .Q(N356) );
+  XOR2X1 U481 ( .IN1(neighborCount[9]), .IN2(\add_163/carry[10] ), .Q(N367) );
+  XNOR2X1 U482 ( .IN1(k[9]), .IN2(\add_84/carry[10] ), .Q(N246) );
   XOR2X1 U483 ( .IN1(k[9]), .IN2(\r158/carry[10] ), .Q(N257) );
-  XNOR2X1 U484 ( .IN1(neighborCount[9]), .IN2(\add_175/carry[10] ), .Q(N392)
+  XNOR2X1 U484 ( .IN1(neighborCount[9]), .IN2(\add_176/carry[10] ), .Q(N392)
          );
-  XOR2X1 U485 ( .IN1(n[9]), .IN2(\add_58/carry[10] ), .Q(N200) );
-  XOR2X1 U486 ( .IN1(n[9]), .IN2(\add_107/carry[10] ), .Q(N307) );
-  XOR2X1 U487 ( .IN1(n[9]), .IN2(\add_113/carry[10] ), .Q(N318) );
-  XOR2X1 U488 ( .IN1(neighborCount[9]), .IN2(\add_150/carry[10] ), .Q(N345) );
-  XOR2X1 U489 ( .IN1(neighborCount[9]), .IN2(\add_143/carry[10] ), .Q(N334) );
-  AND2X1 U490 ( .IN1(\add_156/carry[9] ), .IN2(neighborCount[8]), .Q(
-        \add_156/carry[10] ) );
-  XOR2X1 U491 ( .IN1(neighborCount[8]), .IN2(\add_156/carry[9] ), .Q(N355) );
-  AND2X1 U492 ( .IN1(\add_162/carry[9] ), .IN2(neighborCount[8]), .Q(
-        \add_162/carry[10] ) );
-  XOR2X1 U493 ( .IN1(neighborCount[8]), .IN2(\add_162/carry[9] ), .Q(N366) );
-  OR2X1 U494 ( .IN1(k[8]), .IN2(\add_83/carry[9] ), .Q(\add_83/carry[10] ) );
-  XNOR2X1 U495 ( .IN1(\add_83/carry[9] ), .IN2(k[8]), .Q(N245) );
+  XOR2X1 U485 ( .IN1(n[9]), .IN2(\add_59/carry[10] ), .Q(N200) );
+  XOR2X1 U486 ( .IN1(n[9]), .IN2(\add_108/carry[10] ), .Q(N307) );
+  XOR2X1 U487 ( .IN1(n[9]), .IN2(\add_114/carry[10] ), .Q(N318) );
+  XOR2X1 U488 ( .IN1(neighborCount[9]), .IN2(\add_151/carry[10] ), .Q(N345) );
+  XOR2X1 U489 ( .IN1(neighborCount[9]), .IN2(\add_144/carry[10] ), .Q(N334) );
+  AND2X1 U490 ( .IN1(\add_157/carry[9] ), .IN2(neighborCount[8]), .Q(
+        \add_157/carry[10] ) );
+  XOR2X1 U491 ( .IN1(neighborCount[8]), .IN2(\add_157/carry[9] ), .Q(N355) );
+  AND2X1 U492 ( .IN1(\add_163/carry[9] ), .IN2(neighborCount[8]), .Q(
+        \add_163/carry[10] ) );
+  XOR2X1 U493 ( .IN1(neighborCount[8]), .IN2(\add_163/carry[9] ), .Q(N366) );
+  OR2X1 U494 ( .IN1(k[8]), .IN2(\add_84/carry[9] ), .Q(\add_84/carry[10] ) );
+  XNOR2X1 U495 ( .IN1(\add_84/carry[9] ), .IN2(k[8]), .Q(N245) );
   AND2X1 U496 ( .IN1(\r158/carry[9] ), .IN2(k[8]), .Q(\r158/carry[10] ) );
   XOR2X1 U497 ( .IN1(k[8]), .IN2(\r158/carry[9] ), .Q(N256) );
-  OR2X1 U498 ( .IN1(neighborCount[8]), .IN2(\add_175/carry[9] ), .Q(
-        \add_175/carry[10] ) );
-  XNOR2X1 U499 ( .IN1(\add_175/carry[9] ), .IN2(neighborCount[8]), .Q(N391) );
-  AND2X1 U500 ( .IN1(\add_58/carry[9] ), .IN2(n[8]), .Q(\add_58/carry[10] ) );
-  XOR2X1 U501 ( .IN1(n[8]), .IN2(\add_58/carry[9] ), .Q(N199) );
-  AND2X1 U502 ( .IN1(\add_107/carry[9] ), .IN2(n[8]), .Q(\add_107/carry[10] )
+  OR2X1 U498 ( .IN1(neighborCount[8]), .IN2(\add_176/carry[9] ), .Q(
+        \add_176/carry[10] ) );
+  XNOR2X1 U499 ( .IN1(\add_176/carry[9] ), .IN2(neighborCount[8]), .Q(N391) );
+  AND2X1 U500 ( .IN1(\add_59/carry[9] ), .IN2(n[8]), .Q(\add_59/carry[10] ) );
+  XOR2X1 U501 ( .IN1(n[8]), .IN2(\add_59/carry[9] ), .Q(N199) );
+  AND2X1 U502 ( .IN1(\add_108/carry[9] ), .IN2(n[8]), .Q(\add_108/carry[10] )
          );
-  XOR2X1 U503 ( .IN1(n[8]), .IN2(\add_107/carry[9] ), .Q(N306) );
-  AND2X1 U504 ( .IN1(\add_113/carry[9] ), .IN2(n[8]), .Q(\add_113/carry[10] )
+  XOR2X1 U503 ( .IN1(n[8]), .IN2(\add_108/carry[9] ), .Q(N306) );
+  AND2X1 U504 ( .IN1(\add_114/carry[9] ), .IN2(n[8]), .Q(\add_114/carry[10] )
          );
-  XOR2X1 U505 ( .IN1(n[8]), .IN2(\add_113/carry[9] ), .Q(N317) );
-  AND2X1 U506 ( .IN1(\add_150/carry[9] ), .IN2(neighborCount[8]), .Q(
-        \add_150/carry[10] ) );
-  XOR2X1 U507 ( .IN1(neighborCount[8]), .IN2(\add_150/carry[9] ), .Q(N344) );
-  AND2X1 U508 ( .IN1(\add_143/carry[9] ), .IN2(neighborCount[8]), .Q(
-        \add_143/carry[10] ) );
-  XOR2X1 U509 ( .IN1(neighborCount[8]), .IN2(\add_143/carry[9] ), .Q(N333) );
-  OR2X1 U510 ( .IN1(n[7]), .IN2(\add_113/carry[8] ), .Q(\add_113/carry[9] ) );
-  XNOR2X1 U511 ( .IN1(\add_113/carry[8] ), .IN2(n[7]), .Q(N316) );
-  OR2X1 U512 ( .IN1(neighborCount[7]), .IN2(\add_150/carry[8] ), .Q(
-        \add_150/carry[9] ) );
-  XNOR2X1 U513 ( .IN1(\add_150/carry[8] ), .IN2(neighborCount[7]), .Q(N343) );
-  AND2X1 U514 ( .IN1(\add_143/carry[8] ), .IN2(neighborCount[7]), .Q(
-        \add_143/carry[9] ) );
-  XOR2X1 U515 ( .IN1(neighborCount[7]), .IN2(\add_143/carry[8] ), .Q(N332) );
-  AND2X1 U516 ( .IN1(\add_58/carry[8] ), .IN2(n[7]), .Q(\add_58/carry[9] ) );
-  XOR2X1 U517 ( .IN1(n[7]), .IN2(\add_58/carry[8] ), .Q(N198) );
-  OR2X1 U518 ( .IN1(n[7]), .IN2(\add_107/carry[8] ), .Q(\add_107/carry[9] ) );
-  XNOR2X1 U519 ( .IN1(\add_107/carry[8] ), .IN2(n[7]), .Q(N305) );
-  OR2X1 U520 ( .IN1(neighborCount[7]), .IN2(\add_156/carry[8] ), .Q(
-        \add_156/carry[9] ) );
-  XNOR2X1 U521 ( .IN1(\add_156/carry[8] ), .IN2(neighborCount[7]), .Q(N354) );
-  AND2X1 U522 ( .IN1(\add_162/carry[8] ), .IN2(neighborCount[7]), .Q(
-        \add_162/carry[9] ) );
-  XOR2X1 U523 ( .IN1(neighborCount[7]), .IN2(\add_162/carry[8] ), .Q(N365) );
-  AND2X1 U524 ( .IN1(\add_83/carry[8] ), .IN2(k[7]), .Q(\add_83/carry[9] ) );
-  XOR2X1 U525 ( .IN1(k[7]), .IN2(\add_83/carry[8] ), .Q(N244) );
+  XOR2X1 U505 ( .IN1(n[8]), .IN2(\add_114/carry[9] ), .Q(N317) );
+  AND2X1 U506 ( .IN1(\add_151/carry[9] ), .IN2(neighborCount[8]), .Q(
+        \add_151/carry[10] ) );
+  XOR2X1 U507 ( .IN1(neighborCount[8]), .IN2(\add_151/carry[9] ), .Q(N344) );
+  AND2X1 U508 ( .IN1(\add_144/carry[9] ), .IN2(neighborCount[8]), .Q(
+        \add_144/carry[10] ) );
+  XOR2X1 U509 ( .IN1(neighborCount[8]), .IN2(\add_144/carry[9] ), .Q(N333) );
+  OR2X1 U510 ( .IN1(n[7]), .IN2(\add_114/carry[8] ), .Q(\add_114/carry[9] ) );
+  XNOR2X1 U511 ( .IN1(\add_114/carry[8] ), .IN2(n[7]), .Q(N316) );
+  OR2X1 U512 ( .IN1(neighborCount[7]), .IN2(\add_151/carry[8] ), .Q(
+        \add_151/carry[9] ) );
+  XNOR2X1 U513 ( .IN1(\add_151/carry[8] ), .IN2(neighborCount[7]), .Q(N343) );
+  AND2X1 U514 ( .IN1(\add_144/carry[8] ), .IN2(neighborCount[7]), .Q(
+        \add_144/carry[9] ) );
+  XOR2X1 U515 ( .IN1(neighborCount[7]), .IN2(\add_144/carry[8] ), .Q(N332) );
+  AND2X1 U516 ( .IN1(\add_59/carry[8] ), .IN2(n[7]), .Q(\add_59/carry[9] ) );
+  XOR2X1 U517 ( .IN1(n[7]), .IN2(\add_59/carry[8] ), .Q(N198) );
+  OR2X1 U518 ( .IN1(n[7]), .IN2(\add_108/carry[8] ), .Q(\add_108/carry[9] ) );
+  XNOR2X1 U519 ( .IN1(\add_108/carry[8] ), .IN2(n[7]), .Q(N305) );
+  OR2X1 U520 ( .IN1(neighborCount[7]), .IN2(\add_157/carry[8] ), .Q(
+        \add_157/carry[9] ) );
+  XNOR2X1 U521 ( .IN1(\add_157/carry[8] ), .IN2(neighborCount[7]), .Q(N354) );
+  AND2X1 U522 ( .IN1(\add_163/carry[8] ), .IN2(neighborCount[7]), .Q(
+        \add_163/carry[9] ) );
+  XOR2X1 U523 ( .IN1(neighborCount[7]), .IN2(\add_163/carry[8] ), .Q(N365) );
+  AND2X1 U524 ( .IN1(\add_84/carry[8] ), .IN2(k[7]), .Q(\add_84/carry[9] ) );
+  XOR2X1 U525 ( .IN1(k[7]), .IN2(\add_84/carry[8] ), .Q(N244) );
   AND2X1 U526 ( .IN1(\r158/carry[8] ), .IN2(k[7]), .Q(\r158/carry[9] ) );
   XOR2X1 U527 ( .IN1(k[7]), .IN2(\r158/carry[8] ), .Q(N255) );
-  AND2X1 U528 ( .IN1(\add_175/carry[8] ), .IN2(neighborCount[7]), .Q(
-        \add_175/carry[9] ) );
-  XOR2X1 U529 ( .IN1(neighborCount[7]), .IN2(\add_175/carry[8] ), .Q(N390) );
-  OR2X1 U530 ( .IN1(neighborCount[6]), .IN2(\add_156/carry[7] ), .Q(
-        \add_156/carry[8] ) );
-  XNOR2X1 U531 ( .IN1(\add_156/carry[7] ), .IN2(neighborCount[6]), .Q(N353) );
-  OR2X1 U532 ( .IN1(neighborCount[6]), .IN2(\add_162/carry[7] ), .Q(
-        \add_162/carry[8] ) );
-  XNOR2X1 U533 ( .IN1(\add_162/carry[7] ), .IN2(neighborCount[6]), .Q(N364) );
-  OR2X1 U534 ( .IN1(k[6]), .IN2(\add_83/carry[7] ), .Q(\add_83/carry[8] ) );
-  XNOR2X1 U535 ( .IN1(\add_83/carry[7] ), .IN2(k[6]), .Q(N243) );
+  AND2X1 U528 ( .IN1(\add_176/carry[8] ), .IN2(neighborCount[7]), .Q(
+        \add_176/carry[9] ) );
+  XOR2X1 U529 ( .IN1(neighborCount[7]), .IN2(\add_176/carry[8] ), .Q(N390) );
+  OR2X1 U530 ( .IN1(neighborCount[6]), .IN2(\add_157/carry[7] ), .Q(
+        \add_157/carry[8] ) );
+  XNOR2X1 U531 ( .IN1(\add_157/carry[7] ), .IN2(neighborCount[6]), .Q(N353) );
+  OR2X1 U532 ( .IN1(neighborCount[6]), .IN2(\add_163/carry[7] ), .Q(
+        \add_163/carry[8] ) );
+  XNOR2X1 U533 ( .IN1(\add_163/carry[7] ), .IN2(neighborCount[6]), .Q(N364) );
+  OR2X1 U534 ( .IN1(k[6]), .IN2(\add_84/carry[7] ), .Q(\add_84/carry[8] ) );
+  XNOR2X1 U535 ( .IN1(\add_84/carry[7] ), .IN2(k[6]), .Q(N243) );
   AND2X1 U536 ( .IN1(\r158/carry[7] ), .IN2(k[6]), .Q(\r158/carry[8] ) );
   XOR2X1 U537 ( .IN1(k[6]), .IN2(\r158/carry[7] ), .Q(N254) );
-  OR2X1 U538 ( .IN1(neighborCount[6]), .IN2(\add_175/carry[7] ), .Q(
-        \add_175/carry[8] ) );
-  XNOR2X1 U539 ( .IN1(\add_175/carry[7] ), .IN2(neighborCount[6]), .Q(N389) );
-  AND2X1 U540 ( .IN1(\add_58/carry[7] ), .IN2(n[6]), .Q(\add_58/carry[8] ) );
-  XOR2X1 U541 ( .IN1(n[6]), .IN2(\add_58/carry[7] ), .Q(N197) );
-  AND2X1 U542 ( .IN1(\add_107/carry[7] ), .IN2(n[6]), .Q(\add_107/carry[8] )
+  OR2X1 U538 ( .IN1(neighborCount[6]), .IN2(\add_176/carry[7] ), .Q(
+        \add_176/carry[8] ) );
+  XNOR2X1 U539 ( .IN1(\add_176/carry[7] ), .IN2(neighborCount[6]), .Q(N389) );
+  AND2X1 U540 ( .IN1(\add_59/carry[7] ), .IN2(n[6]), .Q(\add_59/carry[8] ) );
+  XOR2X1 U541 ( .IN1(n[6]), .IN2(\add_59/carry[7] ), .Q(N197) );
+  AND2X1 U542 ( .IN1(\add_108/carry[7] ), .IN2(n[6]), .Q(\add_108/carry[8] )
          );
-  XOR2X1 U543 ( .IN1(n[6]), .IN2(\add_107/carry[7] ), .Q(N304) );
-  OR2X1 U544 ( .IN1(n[6]), .IN2(\add_113/carry[7] ), .Q(\add_113/carry[8] ) );
-  XNOR2X1 U545 ( .IN1(\add_113/carry[7] ), .IN2(n[6]), .Q(N315) );
-  AND2X1 U546 ( .IN1(\add_150/carry[7] ), .IN2(neighborCount[6]), .Q(
-        \add_150/carry[8] ) );
-  XOR2X1 U547 ( .IN1(neighborCount[6]), .IN2(\add_150/carry[7] ), .Q(N342) );
-  AND2X1 U548 ( .IN1(\add_143/carry[7] ), .IN2(neighborCount[6]), .Q(
-        \add_143/carry[8] ) );
-  XOR2X1 U549 ( .IN1(neighborCount[6]), .IN2(\add_143/carry[7] ), .Q(N331) );
-  OR2X1 U550 ( .IN1(n[5]), .IN2(\add_113/carry[6] ), .Q(\add_113/carry[7] ) );
-  XNOR2X1 U551 ( .IN1(\add_113/carry[6] ), .IN2(n[5]), .Q(N314) );
-  OR2X1 U552 ( .IN1(neighborCount[5]), .IN2(\add_150/carry[6] ), .Q(
-        \add_150/carry[7] ) );
-  XNOR2X1 U553 ( .IN1(\add_150/carry[6] ), .IN2(neighborCount[5]), .Q(N341) );
-  OR2X1 U554 ( .IN1(neighborCount[5]), .IN2(\add_143/carry[6] ), .Q(
-        \add_143/carry[7] ) );
-  XNOR2X1 U555 ( .IN1(\add_143/carry[6] ), .IN2(neighborCount[5]), .Q(N330) );
-  OR2X1 U556 ( .IN1(n[5]), .IN2(\add_58/carry[6] ), .Q(\add_58/carry[7] ) );
-  XNOR2X1 U557 ( .IN1(\add_58/carry[6] ), .IN2(n[5]), .Q(N196) );
-  OR2X1 U558 ( .IN1(n[5]), .IN2(\add_107/carry[6] ), .Q(\add_107/carry[7] ) );
-  XNOR2X1 U559 ( .IN1(\add_107/carry[6] ), .IN2(n[5]), .Q(N303) );
-  OR2X1 U560 ( .IN1(neighborCount[5]), .IN2(\add_156/carry[6] ), .Q(
-        \add_156/carry[7] ) );
-  XNOR2X1 U561 ( .IN1(\add_156/carry[6] ), .IN2(neighborCount[5]), .Q(N352) );
-  OR2X1 U562 ( .IN1(neighborCount[5]), .IN2(\add_162/carry[6] ), .Q(
-        \add_162/carry[7] ) );
-  XNOR2X1 U563 ( .IN1(\add_162/carry[6] ), .IN2(neighborCount[5]), .Q(N363) );
-  AND2X1 U564 ( .IN1(\add_83/carry[6] ), .IN2(k[5]), .Q(\add_83/carry[7] ) );
-  XOR2X1 U565 ( .IN1(k[5]), .IN2(\add_83/carry[6] ), .Q(N242) );
+  XOR2X1 U543 ( .IN1(n[6]), .IN2(\add_108/carry[7] ), .Q(N304) );
+  OR2X1 U544 ( .IN1(n[6]), .IN2(\add_114/carry[7] ), .Q(\add_114/carry[8] ) );
+  XNOR2X1 U545 ( .IN1(\add_114/carry[7] ), .IN2(n[6]), .Q(N315) );
+  AND2X1 U546 ( .IN1(\add_151/carry[7] ), .IN2(neighborCount[6]), .Q(
+        \add_151/carry[8] ) );
+  XOR2X1 U547 ( .IN1(neighborCount[6]), .IN2(\add_151/carry[7] ), .Q(N342) );
+  AND2X1 U548 ( .IN1(\add_144/carry[7] ), .IN2(neighborCount[6]), .Q(
+        \add_144/carry[8] ) );
+  XOR2X1 U549 ( .IN1(neighborCount[6]), .IN2(\add_144/carry[7] ), .Q(N331) );
+  OR2X1 U550 ( .IN1(n[5]), .IN2(\add_114/carry[6] ), .Q(\add_114/carry[7] ) );
+  XNOR2X1 U551 ( .IN1(\add_114/carry[6] ), .IN2(n[5]), .Q(N314) );
+  OR2X1 U552 ( .IN1(neighborCount[5]), .IN2(\add_151/carry[6] ), .Q(
+        \add_151/carry[7] ) );
+  XNOR2X1 U553 ( .IN1(\add_151/carry[6] ), .IN2(neighborCount[5]), .Q(N341) );
+  OR2X1 U554 ( .IN1(neighborCount[5]), .IN2(\add_144/carry[6] ), .Q(
+        \add_144/carry[7] ) );
+  XNOR2X1 U555 ( .IN1(\add_144/carry[6] ), .IN2(neighborCount[5]), .Q(N330) );
+  OR2X1 U556 ( .IN1(n[5]), .IN2(\add_59/carry[6] ), .Q(\add_59/carry[7] ) );
+  XNOR2X1 U557 ( .IN1(\add_59/carry[6] ), .IN2(n[5]), .Q(N196) );
+  OR2X1 U558 ( .IN1(n[5]), .IN2(\add_108/carry[6] ), .Q(\add_108/carry[7] ) );
+  XNOR2X1 U559 ( .IN1(\add_108/carry[6] ), .IN2(n[5]), .Q(N303) );
+  OR2X1 U560 ( .IN1(neighborCount[5]), .IN2(\add_157/carry[6] ), .Q(
+        \add_157/carry[7] ) );
+  XNOR2X1 U561 ( .IN1(\add_157/carry[6] ), .IN2(neighborCount[5]), .Q(N352) );
+  OR2X1 U562 ( .IN1(neighborCount[5]), .IN2(\add_163/carry[6] ), .Q(
+        \add_163/carry[7] ) );
+  XNOR2X1 U563 ( .IN1(\add_163/carry[6] ), .IN2(neighborCount[5]), .Q(N363) );
+  AND2X1 U564 ( .IN1(\add_84/carry[6] ), .IN2(k[5]), .Q(\add_84/carry[7] ) );
+  XOR2X1 U565 ( .IN1(k[5]), .IN2(\add_84/carry[6] ), .Q(N242) );
   AND2X1 U566 ( .IN1(\r158/carry[6] ), .IN2(k[5]), .Q(\r158/carry[7] ) );
   XOR2X1 U567 ( .IN1(k[5]), .IN2(\r158/carry[6] ), .Q(N253) );
-  AND2X1 U568 ( .IN1(\add_175/carry[6] ), .IN2(neighborCount[5]), .Q(
-        \add_175/carry[7] ) );
-  XOR2X1 U569 ( .IN1(neighborCount[5]), .IN2(\add_175/carry[6] ), .Q(N388) );
-  AND2X1 U570 ( .IN1(\add_113/carry[5] ), .IN2(n[4]), .Q(\add_113/carry[6] )
+  AND2X1 U568 ( .IN1(\add_176/carry[6] ), .IN2(neighborCount[5]), .Q(
+        \add_176/carry[7] ) );
+  XOR2X1 U569 ( .IN1(neighborCount[5]), .IN2(\add_176/carry[6] ), .Q(N388) );
+  AND2X1 U570 ( .IN1(\add_114/carry[5] ), .IN2(n[4]), .Q(\add_114/carry[6] )
          );
-  XOR2X1 U571 ( .IN1(n[4]), .IN2(\add_113/carry[5] ), .Q(N313) );
-  AND2X1 U572 ( .IN1(\add_150/carry[5] ), .IN2(neighborCount[4]), .Q(
-        \add_150/carry[6] ) );
-  XOR2X1 U573 ( .IN1(neighborCount[4]), .IN2(\add_150/carry[5] ), .Q(N340) );
-  AND2X1 U574 ( .IN1(\add_143/carry[5] ), .IN2(neighborCount[4]), .Q(
-        \add_143/carry[6] ) );
-  XOR2X1 U575 ( .IN1(neighborCount[4]), .IN2(\add_143/carry[5] ), .Q(N329) );
-  AND2X1 U576 ( .IN1(\add_58/carry[5] ), .IN2(n[4]), .Q(\add_58/carry[6] ) );
-  XOR2X1 U577 ( .IN1(n[4]), .IN2(\add_58/carry[5] ), .Q(N195) );
-  AND2X1 U578 ( .IN1(\add_107/carry[5] ), .IN2(n[4]), .Q(\add_107/carry[6] )
+  XOR2X1 U571 ( .IN1(n[4]), .IN2(\add_114/carry[5] ), .Q(N313) );
+  AND2X1 U572 ( .IN1(\add_151/carry[5] ), .IN2(neighborCount[4]), .Q(
+        \add_151/carry[6] ) );
+  XOR2X1 U573 ( .IN1(neighborCount[4]), .IN2(\add_151/carry[5] ), .Q(N340) );
+  AND2X1 U574 ( .IN1(\add_144/carry[5] ), .IN2(neighborCount[4]), .Q(
+        \add_144/carry[6] ) );
+  XOR2X1 U575 ( .IN1(neighborCount[4]), .IN2(\add_144/carry[5] ), .Q(N329) );
+  AND2X1 U576 ( .IN1(\add_59/carry[5] ), .IN2(n[4]), .Q(\add_59/carry[6] ) );
+  XOR2X1 U577 ( .IN1(n[4]), .IN2(\add_59/carry[5] ), .Q(N195) );
+  AND2X1 U578 ( .IN1(\add_108/carry[5] ), .IN2(n[4]), .Q(\add_108/carry[6] )
          );
-  XOR2X1 U579 ( .IN1(n[4]), .IN2(\add_107/carry[5] ), .Q(N302) );
-  AND2X1 U580 ( .IN1(\add_156/carry[5] ), .IN2(neighborCount[4]), .Q(
-        \add_156/carry[6] ) );
-  XOR2X1 U581 ( .IN1(neighborCount[4]), .IN2(\add_156/carry[5] ), .Q(N351) );
-  AND2X1 U582 ( .IN1(\add_162/carry[5] ), .IN2(neighborCount[4]), .Q(
-        \add_162/carry[6] ) );
-  XOR2X1 U583 ( .IN1(neighborCount[4]), .IN2(\add_162/carry[5] ), .Q(N362) );
-  AND2X1 U584 ( .IN1(\add_83/carry[5] ), .IN2(k[4]), .Q(\add_83/carry[6] ) );
-  XOR2X1 U585 ( .IN1(k[4]), .IN2(\add_83/carry[5] ), .Q(N241) );
+  XOR2X1 U579 ( .IN1(n[4]), .IN2(\add_108/carry[5] ), .Q(N302) );
+  AND2X1 U580 ( .IN1(\add_157/carry[5] ), .IN2(neighborCount[4]), .Q(
+        \add_157/carry[6] ) );
+  XOR2X1 U581 ( .IN1(neighborCount[4]), .IN2(\add_157/carry[5] ), .Q(N351) );
+  AND2X1 U582 ( .IN1(\add_163/carry[5] ), .IN2(neighborCount[4]), .Q(
+        \add_163/carry[6] ) );
+  XOR2X1 U583 ( .IN1(neighborCount[4]), .IN2(\add_163/carry[5] ), .Q(N362) );
+  AND2X1 U584 ( .IN1(\add_84/carry[5] ), .IN2(k[4]), .Q(\add_84/carry[6] ) );
+  XOR2X1 U585 ( .IN1(k[4]), .IN2(\add_84/carry[5] ), .Q(N241) );
   AND2X1 U586 ( .IN1(\r158/carry[5] ), .IN2(k[4]), .Q(\r158/carry[6] ) );
   XOR2X1 U587 ( .IN1(k[4]), .IN2(\r158/carry[5] ), .Q(N252) );
-  AND2X1 U588 ( .IN1(\add_175/carry[5] ), .IN2(neighborCount[4]), .Q(
-        \add_175/carry[6] ) );
-  XOR2X1 U589 ( .IN1(neighborCount[4]), .IN2(\add_175/carry[5] ), .Q(N387) );
-  AND2X1 U590 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_113/carry[5] ) );
+  AND2X1 U588 ( .IN1(\add_176/carry[5] ), .IN2(neighborCount[4]), .Q(
+        \add_176/carry[6] ) );
+  XOR2X1 U589 ( .IN1(neighborCount[4]), .IN2(\add_176/carry[5] ), .Q(N387) );
+  AND2X1 U590 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_114/carry[5] ) );
   XOR2X1 U591 ( .IN1(n[3]), .IN2(n[2]), .Q(N312) );
   AND2X1 U592 ( .IN1(neighborCount[2]), .IN2(neighborCount[3]), .Q(
-        \add_150/carry[5] ) );
+        \add_151/carry[5] ) );
   XOR2X1 U593 ( .IN1(neighborCount[3]), .IN2(neighborCount[2]), .Q(N339) );
   AND2X1 U594 ( .IN1(neighborCount[2]), .IN2(neighborCount[3]), .Q(
-        \add_143/carry[5] ) );
+        \add_144/carry[5] ) );
   XOR2X1 U595 ( .IN1(neighborCount[3]), .IN2(neighborCount[2]), .Q(N328) );
-  AND2X1 U596 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_58/carry[5] ) );
+  AND2X1 U596 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_59/carry[5] ) );
   XOR2X1 U597 ( .IN1(n[3]), .IN2(n[2]), .Q(N194) );
-  AND2X1 U598 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_107/carry[5] ) );
+  AND2X1 U598 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_108/carry[5] ) );
   XOR2X1 U599 ( .IN1(n[3]), .IN2(n[2]), .Q(N301) );
   AND2X1 U600 ( .IN1(neighborCount[2]), .IN2(neighborCount[3]), .Q(
-        \add_156/carry[5] ) );
+        \add_157/carry[5] ) );
   XOR2X1 U601 ( .IN1(neighborCount[3]), .IN2(neighborCount[2]), .Q(N350) );
   AND2X1 U602 ( .IN1(neighborCount[2]), .IN2(neighborCount[3]), .Q(
-        \add_162/carry[5] ) );
+        \add_163/carry[5] ) );
   XOR2X1 U603 ( .IN1(neighborCount[3]), .IN2(neighborCount[2]), .Q(N361) );
-  AND2X1 U604 ( .IN1(\add_83/carry[4] ), .IN2(k[3]), .Q(\add_83/carry[5] ) );
-  XOR2X1 U605 ( .IN1(k[3]), .IN2(\add_83/carry[4] ), .Q(N240) );
+  AND2X1 U604 ( .IN1(\add_84/carry[4] ), .IN2(k[3]), .Q(\add_84/carry[5] ) );
+  XOR2X1 U605 ( .IN1(k[3]), .IN2(\add_84/carry[4] ), .Q(N240) );
   AND2X1 U606 ( .IN1(k[2]), .IN2(k[3]), .Q(\r158/carry[5] ) );
   XOR2X1 U607 ( .IN1(k[3]), .IN2(k[2]), .Q(N251) );
-  AND2X1 U608 ( .IN1(\add_175/carry[4] ), .IN2(neighborCount[3]), .Q(
-        \add_175/carry[5] ) );
-  XOR2X1 U609 ( .IN1(neighborCount[3]), .IN2(\add_175/carry[4] ), .Q(N386) );
-  OR2X1 U610 ( .IN1(k[2]), .IN2(\add_83/carry[3] ), .Q(\add_83/carry[4] ) );
-  XNOR2X1 U611 ( .IN1(\add_83/carry[3] ), .IN2(k[2]), .Q(N239) );
-  OR2X1 U612 ( .IN1(neighborCount[2]), .IN2(\add_175/carry[3] ), .Q(
-        \add_175/carry[4] ) );
-  XNOR2X1 U613 ( .IN1(\add_175/carry[3] ), .IN2(neighborCount[2]), .Q(N385) );
-  OR2X1 U614 ( .IN1(N249), .IN2(N248), .Q(\add_83/carry[3] ) );
+  AND2X1 U608 ( .IN1(\add_176/carry[4] ), .IN2(neighborCount[3]), .Q(
+        \add_176/carry[5] ) );
+  XOR2X1 U609 ( .IN1(neighborCount[3]), .IN2(\add_176/carry[4] ), .Q(N386) );
+  OR2X1 U610 ( .IN1(k[2]), .IN2(\add_84/carry[3] ), .Q(\add_84/carry[4] ) );
+  XNOR2X1 U611 ( .IN1(\add_84/carry[3] ), .IN2(k[2]), .Q(N239) );
+  OR2X1 U612 ( .IN1(neighborCount[2]), .IN2(\add_176/carry[3] ), .Q(
+        \add_176/carry[4] ) );
+  XNOR2X1 U613 ( .IN1(\add_176/carry[3] ), .IN2(neighborCount[2]), .Q(N385) );
+  OR2X1 U614 ( .IN1(N249), .IN2(N248), .Q(\add_84/carry[3] ) );
   XNOR2X1 U615 ( .IN1(N248), .IN2(N249), .Q(N238) );
-  OR2X1 U616 ( .IN1(N326), .IN2(N325), .Q(\add_175/carry[3] ) );
+  OR2X1 U616 ( .IN1(N326), .IN2(N325), .Q(\add_176/carry[3] ) );
   XNOR2X1 U617 ( .IN1(N325), .IN2(N326), .Q(N384) );
-  XOR2X1 U618 ( .IN1(neighborCount[6]), .IN2(\add_168/carry[10] ), .Q(N378) );
-  XOR2X1 U619 ( .IN1(n[6]), .IN2(\add_71/carry[10] ), .Q(N215) );
-  OR2X1 U620 ( .IN1(neighborCount[5]), .IN2(\add_168/carry[9] ), .Q(
-        \add_168/carry[10] ) );
-  XNOR2X1 U621 ( .IN1(\add_168/carry[9] ), .IN2(neighborCount[5]), .Q(N377) );
-  OR2X1 U622 ( .IN1(n[5]), .IN2(\add_71/carry[9] ), .Q(\add_71/carry[10] ) );
-  XNOR2X1 U623 ( .IN1(\add_71/carry[9] ), .IN2(n[5]), .Q(N214) );
-  AND2X1 U624 ( .IN1(\add_168/carry[8] ), .IN2(neighborCount[4]), .Q(
-        \add_168/carry[9] ) );
-  XOR2X1 U625 ( .IN1(neighborCount[4]), .IN2(\add_168/carry[8] ), .Q(N376) );
-  AND2X1 U626 ( .IN1(\add_71/carry[8] ), .IN2(n[4]), .Q(\add_71/carry[9] ) );
-  XOR2X1 U627 ( .IN1(n[4]), .IN2(\add_71/carry[8] ), .Q(N213) );
+  XOR2X1 U618 ( .IN1(neighborCount[6]), .IN2(\add_169/carry[10] ), .Q(N378) );
+  XOR2X1 U619 ( .IN1(n[6]), .IN2(\add_72/carry[10] ), .Q(N215) );
+  OR2X1 U620 ( .IN1(neighborCount[5]), .IN2(\add_169/carry[9] ), .Q(
+        \add_169/carry[10] ) );
+  XNOR2X1 U621 ( .IN1(\add_169/carry[9] ), .IN2(neighborCount[5]), .Q(N377) );
+  OR2X1 U622 ( .IN1(n[5]), .IN2(\add_72/carry[9] ), .Q(\add_72/carry[10] ) );
+  XNOR2X1 U623 ( .IN1(\add_72/carry[9] ), .IN2(n[5]), .Q(N214) );
+  AND2X1 U624 ( .IN1(\add_169/carry[8] ), .IN2(neighborCount[4]), .Q(
+        \add_169/carry[9] ) );
+  XOR2X1 U625 ( .IN1(neighborCount[4]), .IN2(\add_169/carry[8] ), .Q(N376) );
+  AND2X1 U626 ( .IN1(\add_72/carry[8] ), .IN2(n[4]), .Q(\add_72/carry[9] ) );
+  XOR2X1 U627 ( .IN1(n[4]), .IN2(\add_72/carry[8] ), .Q(N213) );
   AND2X1 U628 ( .IN1(neighborCount[2]), .IN2(neighborCount[3]), .Q(
-        \add_168/carry[8] ) );
+        \add_169/carry[8] ) );
   XOR2X1 U629 ( .IN1(neighborCount[3]), .IN2(neighborCount[2]), .Q(N375) );
-  AND2X1 U630 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_71/carry[8] ) );
+  AND2X1 U630 ( .IN1(n[2]), .IN2(n[3]), .Q(\add_72/carry[8] ) );
   XOR2X1 U631 ( .IN1(n[3]), .IN2(n[2]), .Q(N212) );
   XOR2X1 U632 ( .IN1(knownSinkCount[15]), .IN2(k[15]), .Q(n418) );
   XOR2X1 U633 ( .IN1(knownSinkCount[2]), .IN2(k[2]), .Q(n417) );

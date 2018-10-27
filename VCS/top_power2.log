@@ -1,0 +1,119 @@
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/CORE65GPSVT_nom_1.00V_25C.db'
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : top
+Version: I-2013.12
+Date   : Tue Mar 20 15:34:36 2018
+****************************************
+
+
+Library(s) Used:
+
+    CORE65GPSVT (File: /nfs/home/rrmina/Desktop/VCS/lib/CORE65GPSVT_nom_1.00V_25C.db)
+
+
+Operating Conditions: nom_1.00V_25C   Library: CORE65GPSVT
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    area_30Kto36K     CORE65GPSVT
+mux_11bit              area_0Kto1K       CORE65GPSVT
+mux_16bit              area_0Kto1K       CORE65GPSVT
+mux_1bit               area_0Kto1K       CORE65GPSVT
+learnCosts             area_3Kto4K       CORE65GPSVT
+amISink                area_0Kto1K       CORE65GPSVT
+amIDestination         area_0Kto1K       CORE65GPSVT
+fixSinkList            area_3Kto4K       CORE65GPSVT
+neighborSinkInOtherCluster
+                       area_2Kto3K       CORE65GPSVT
+findMyBest             area_5Kto6K       CORE65GPSVT
+betterNeighborsInMyCluster
+                       area_8Kto9K       CORE65GPSVT
+randomGenerator        area_0Kto1K       CORE65GPSVT
+rngAddress             area_0Kto1K       CORE65GPSVT
+winnerPolicy           area_5Kto6K       CORE65GPSVT
+selectMyAction         area_0Kto1K       CORE65GPSVT
+reward                 area_0Kto1K       CORE65GPSVT
+winnerPolicy_DW01_sub_0
+                       area_0Kto1K       CORE65GPSVT
+rngAddress_DW01_sub_0  area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_inc_0
+                       area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_inc_1
+                       area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_inc_2
+                       area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_inc_3
+                       area_0Kto1K       CORE65GPSVT
+findMyBest_DW01_inc_1  area_0Kto1K       CORE65GPSVT
+neighborSinkInOtherCluster_DW01_inc_0
+                       area_0Kto1K       CORE65GPSVT
+neighborSinkInOtherCluster_DW01_inc_1
+                       area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_inc_0 area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_inc_1 area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_inc_2 area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_inc_3 area_0Kto1K       CORE65GPSVT
+learnCosts_DW01_inc_0  area_0Kto1K       CORE65GPSVT
+learnCosts_DW01_inc_1  area_0Kto1K       CORE65GPSVT
+learnCosts_DW01_inc_2  area_0Kto1K       CORE65GPSVT
+learnCosts_DW01_add_11 area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW02_mult_0
+                       area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_add_10
+                       area_0Kto1K       CORE65GPSVT
+betterNeighborsInMyCluster_DW02_mult_1
+                       area_2Kto3K       CORE65GPSVT
+betterNeighborsInMyCluster_DW01_add_11
+                       area_0Kto1K       CORE65GPSVT
+findMyBest_DW02_mult_0 area_2Kto3K       CORE65GPSVT
+findMyBest_DW01_add_3  area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_add_11
+                       area_0Kto1K       CORE65GPSVT
+fixSinkList_DW01_inc_4 area_0Kto1K       CORE65GPSVT
+findMyBest_DW02_mult_1 area_0Kto1K       CORE65GPSVT
+findMyBest_DW01_add_4  area_0Kto1K       CORE65GPSVT
+winnerPolicy_DW02_mult_0
+                       area_2Kto3K       CORE65GPSVT
+winnerPolicy_DW01_add_2
+                       area_0Kto1K       CORE65GPSVT
+winnerPolicy_DW02_mult_1
+                       area_0Kto1K       CORE65GPSVT
+
+
+Global Operating Voltage = 1    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  = 368.7312 uW   (93%)
+  Net Switching Power  =  29.7207 uW    (7%)
+                         ---------
+Total Dynamic Power    = 398.4520 uW  (100%)
+
+Cell Leakage Power     = 326.7876 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.3483        1.4709e-03            0.1093            0.4591  (  63.30%)
+sequential         0.0000            0.0000        4.4640e-04        4.4640e-04  (   0.06%)
+combinational  2.0388e-02        2.8250e-02            0.2171            0.2657  (  36.64%)
+--------------------------------------------------------------------------------------------------
+Total              0.3687 mW     2.9721e-02 mW         0.3268 mW         0.7252 mW
+1

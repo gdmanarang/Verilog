@@ -832,14 +832,14 @@ module winnerPolicy ( clock, nrst, en, start_winnerPolicy, mybest, besthop,
          n288, n289, n290, n291, n292, n293, n294, n295, n296, n297, n298,
          n299, n300, n301, n302, n303, n304, n305, n306, N229, N228, N227,
          N226, N225, N224, N223, N222, N221, N220, N219, N218, N217, N216,
-         N215, N214, N213, \add_120/carry[10] , \add_120/carry[9] ,
-         \add_120/carry[8] , \add_120/carry[7] , \add_120/carry[6] ,
-         \add_120/carry[5] , \add_172/carry[31] , \add_172/carry[30] ,
-         \add_172/carry[29] , \add_172/carry[28] , \add_172/carry[27] ,
-         \add_172/carry[26] , \add_172/carry[25] , \add_172/carry[24] ,
-         \add_172/carry[23] , \add_172/carry[22] , \add_172/carry[21] ,
-         \add_172/carry[20] , \add_172/carry[19] , \add_172/carry[18] ,
-         \add_172/carry[17] , \add_172/carry[16] , n307, n308, n309, n310,
+         N215, N214, N213, \add_121/carry[10] , \add_121/carry[9] ,
+         \add_121/carry[8] , \add_121/carry[7] , \add_121/carry[6] ,
+         \add_121/carry[5] , \add_173/carry[31] , \add_173/carry[30] ,
+         \add_173/carry[29] , \add_173/carry[28] , \add_173/carry[27] ,
+         \add_173/carry[26] , \add_173/carry[25] , \add_173/carry[24] ,
+         \add_173/carry[23] , \add_173/carry[22] , \add_173/carry[21] ,
+         \add_173/carry[20] , \add_173/carry[19] , \add_173/carry[18] ,
+         \add_173/carry[17] , \add_173/carry[16] , n307, n308, n309, n310,
          n311, n312, n313, n314, n315, n316, n317, n318, n319, n320, n321,
          n322, n323, n324, n325, n326, n327, n328, n329, n330, n331, n332,
          n333, n334, n335, n336, n337, n338, n339, n340, n341, n342, n343,
@@ -1014,10 +1014,10 @@ module winnerPolicy ( clock, nrst, en, start_winnerPolicy, mybest, besthop,
   DFFX1 \nexthop_buf_reg[3]  ( .D(n125), .CLK(clock), .Q(nexthop[3]) );
   DFFX1 \nexthop_buf_reg[2]  ( .D(n126), .CLK(clock), .Q(nexthop[2]) );
   DFFX1 \nexthop_buf_reg[1]  ( .D(n127), .CLK(clock), .Q(nexthop[1]) );
-  winnerPolicy_DW01_sub_0 sub_130 ( .A(epsilon_buf), .B(epsilon_step), .CI(
+  winnerPolicy_DW01_sub_0 sub_131 ( .A(epsilon_buf), .B(epsilon_step), .CI(
         1'b0), .DIFF({N147, N146, N145, N144, N143, N142, N141, N140, N139, 
         N138, N137, N136, N135, N134, N133, N132}) );
-  winnerPolicy_DW02_mult_1 mult_170 ( .A({mybest[15:10], N244, N243, N242, 
+  winnerPolicy_DW02_mult_1 mult_171 ( .A({mybest[15:10], N244, N243, N242, 
         N241, N240, N239, N238, N237, N236, N235}), .B({1'b1, 1'b0, 1'b0, 1'b0, 
         1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0}), .TC(1'b0), .PRODUCT({N229, N228, N227, N226, N225, N224, N223, N222, N221, 
         N220, N219, N218, N217, N216, N215, N214, N213, 
@@ -1029,42 +1029,42 @@ module winnerPolicy ( clock, nrst, en, start_winnerPolicy, mybest, besthop,
         SYNOPSYS_UNCONNECTED__10, SYNOPSYS_UNCONNECTED__11, 
         SYNOPSYS_UNCONNECTED__12, SYNOPSYS_UNCONNECTED__13, 
         SYNOPSYS_UNCONNECTED__14}) );
-  winnerPolicy_DW02_mult_0 mult_146 ( .A({mybest[15:10], N244, N243, N242, 
+  winnerPolicy_DW02_mult_0 mult_147 ( .A({mybest[15:10], N244, N243, N242, 
         N241, N240, N239, N238, N237, N236, N235}), .B({1'b1, 1'b1, 1'b1, 1'b1, 
         1'b1, 1'b1, 1'b1, 1'b1, 1'b1, 1'b0, 1'b1, 1'b1, 1'b1, 1'b1, 1'b1, 1'b0}), .TC(1'b0), .PRODUCT({N195, N194, N193, N192, N191, N190, N189, N188, N187, 
         N186, N185, N184, N183, N182, N181, N180, N179, N178, N177, N176, N175, 
         N174, N173, N172, N171, N170, N169, N168, N167, N166, N165, 
         SYNOPSYS_UNCONNECTED__15}) );
-  FADDX1 \add_172/U1_16  ( .A(N214), .B(N236), .CI(\add_172/carry[16] ), .CO(
-        \add_172/carry[17] ), .S(N246) );
-  FADDX1 \add_172/U1_17  ( .A(N215), .B(N237), .CI(\add_172/carry[17] ), .CO(
-        \add_172/carry[18] ), .S(N247) );
-  FADDX1 \add_172/U1_18  ( .A(N216), .B(N238), .CI(\add_172/carry[18] ), .CO(
-        \add_172/carry[19] ), .S(N248) );
-  FADDX1 \add_172/U1_19  ( .A(N217), .B(N239), .CI(\add_172/carry[19] ), .CO(
-        \add_172/carry[20] ), .S(N249) );
-  FADDX1 \add_172/U1_20  ( .A(N218), .B(N240), .CI(\add_172/carry[20] ), .CO(
-        \add_172/carry[21] ), .S(N250) );
-  FADDX1 \add_172/U1_21  ( .A(N219), .B(N241), .CI(\add_172/carry[21] ), .CO(
-        \add_172/carry[22] ), .S(N251) );
-  FADDX1 \add_172/U1_22  ( .A(N220), .B(N242), .CI(\add_172/carry[22] ), .CO(
-        \add_172/carry[23] ), .S(N252) );
-  FADDX1 \add_172/U1_23  ( .A(N221), .B(N243), .CI(\add_172/carry[23] ), .CO(
-        \add_172/carry[24] ), .S(N253) );
-  FADDX1 \add_172/U1_24  ( .A(N222), .B(N244), .CI(\add_172/carry[24] ), .CO(
-        \add_172/carry[25] ), .S(N254) );
-  FADDX1 \add_172/U1_25  ( .A(N223), .B(mybest[10]), .CI(\add_172/carry[25] ), 
-        .CO(\add_172/carry[26] ), .S(N255) );
-  FADDX1 \add_172/U1_26  ( .A(N224), .B(mybest[11]), .CI(\add_172/carry[26] ), 
-        .CO(\add_172/carry[27] ), .S(N256) );
-  FADDX1 \add_172/U1_27  ( .A(N225), .B(mybest[12]), .CI(\add_172/carry[27] ), 
-        .CO(\add_172/carry[28] ), .S(N257) );
-  FADDX1 \add_172/U1_28  ( .A(N226), .B(mybest[13]), .CI(\add_172/carry[28] ), 
-        .CO(\add_172/carry[29] ), .S(N258) );
-  FADDX1 \add_172/U1_29  ( .A(N227), .B(mybest[14]), .CI(\add_172/carry[29] ), 
-        .CO(\add_172/carry[30] ), .S(N259) );
-  FADDX1 \add_172/U1_30  ( .A(N228), .B(mybest[15]), .CI(\add_172/carry[30] ), 
-        .CO(\add_172/carry[31] ), .S(N260) );
+  FADDX1 \add_173/U1_16  ( .A(N214), .B(N236), .CI(\add_173/carry[16] ), .CO(
+        \add_173/carry[17] ), .S(N246) );
+  FADDX1 \add_173/U1_17  ( .A(N215), .B(N237), .CI(\add_173/carry[17] ), .CO(
+        \add_173/carry[18] ), .S(N247) );
+  FADDX1 \add_173/U1_18  ( .A(N216), .B(N238), .CI(\add_173/carry[18] ), .CO(
+        \add_173/carry[19] ), .S(N248) );
+  FADDX1 \add_173/U1_19  ( .A(N217), .B(N239), .CI(\add_173/carry[19] ), .CO(
+        \add_173/carry[20] ), .S(N249) );
+  FADDX1 \add_173/U1_20  ( .A(N218), .B(N240), .CI(\add_173/carry[20] ), .CO(
+        \add_173/carry[21] ), .S(N250) );
+  FADDX1 \add_173/U1_21  ( .A(N219), .B(N241), .CI(\add_173/carry[21] ), .CO(
+        \add_173/carry[22] ), .S(N251) );
+  FADDX1 \add_173/U1_22  ( .A(N220), .B(N242), .CI(\add_173/carry[22] ), .CO(
+        \add_173/carry[23] ), .S(N252) );
+  FADDX1 \add_173/U1_23  ( .A(N221), .B(N243), .CI(\add_173/carry[23] ), .CO(
+        \add_173/carry[24] ), .S(N253) );
+  FADDX1 \add_173/U1_24  ( .A(N222), .B(N244), .CI(\add_173/carry[24] ), .CO(
+        \add_173/carry[25] ), .S(N254) );
+  FADDX1 \add_173/U1_25  ( .A(N223), .B(mybest[10]), .CI(\add_173/carry[25] ), 
+        .CO(\add_173/carry[26] ), .S(N255) );
+  FADDX1 \add_173/U1_26  ( .A(N224), .B(mybest[11]), .CI(\add_173/carry[26] ), 
+        .CO(\add_173/carry[27] ), .S(N256) );
+  FADDX1 \add_173/U1_27  ( .A(N225), .B(mybest[12]), .CI(\add_173/carry[27] ), 
+        .CO(\add_173/carry[28] ), .S(N257) );
+  FADDX1 \add_173/U1_28  ( .A(N226), .B(mybest[13]), .CI(\add_173/carry[28] ), 
+        .CO(\add_173/carry[29] ), .S(N258) );
+  FADDX1 \add_173/U1_29  ( .A(N227), .B(mybest[14]), .CI(\add_173/carry[29] ), 
+        .CO(\add_173/carry[30] ), .S(N259) );
+  FADDX1 \add_173/U1_30  ( .A(N228), .B(mybest[15]), .CI(\add_173/carry[30] ), 
+        .CO(\add_173/carry[31] ), .S(N260) );
   DFFX1 \_right_reg[0]  ( .D(n306), .CLK(clock), .Q(_right[0]), .QN(n553) );
   DFFX1 \_right3_reg[4]  ( .D(n592), .CLK(clock), .Q(_right3[4]), .QN(n559) );
   DFFX1 \_right3_reg[3]  ( .D(n593), .CLK(clock), .Q(_right3[3]), .QN(n558) );
@@ -1215,27 +1215,27 @@ module winnerPolicy ( clock, nrst, en, start_winnerPolicy, mybest, besthop,
   INVX0 U341 ( .INP(MY_NODE_ID[0]), .ZN(n399) );
   INVX0 U342 ( .INP(nrst), .ZN(n427) );
   INVX0 U343 ( .INP(bestneighborID[1]), .ZN(n401) );
-  XNOR2X1 U344 ( .IN1(rng_address[9]), .IN2(\add_120/carry[10] ), .Q(N128) );
-  OR2X1 U345 ( .IN1(rng_address[8]), .IN2(\add_120/carry[9] ), .Q(
-        \add_120/carry[10] ) );
-  XNOR2X1 U346 ( .IN1(\add_120/carry[9] ), .IN2(rng_address[8]), .Q(N127) );
-  AND2X1 U347 ( .IN1(\add_120/carry[8] ), .IN2(rng_address[7]), .Q(
-        \add_120/carry[9] ) );
-  XOR2X1 U348 ( .IN1(rng_address[7]), .IN2(\add_120/carry[8] ), .Q(N126) );
-  AND2X1 U349 ( .IN1(\add_120/carry[7] ), .IN2(rng_address[6]), .Q(
-        \add_120/carry[8] ) );
-  XOR2X1 U350 ( .IN1(rng_address[6]), .IN2(\add_120/carry[7] ), .Q(N125) );
-  OR2X1 U351 ( .IN1(rng_address[5]), .IN2(\add_120/carry[6] ), .Q(
-        \add_120/carry[7] ) );
-  XNOR2X1 U352 ( .IN1(\add_120/carry[6] ), .IN2(rng_address[5]), .Q(N124) );
-  OR2X1 U353 ( .IN1(rng_address[4]), .IN2(\add_120/carry[5] ), .Q(
-        \add_120/carry[6] ) );
-  XNOR2X1 U354 ( .IN1(\add_120/carry[5] ), .IN2(rng_address[4]), .Q(N123) );
+  XNOR2X1 U344 ( .IN1(rng_address[9]), .IN2(\add_121/carry[10] ), .Q(N128) );
+  OR2X1 U345 ( .IN1(rng_address[8]), .IN2(\add_121/carry[9] ), .Q(
+        \add_121/carry[10] ) );
+  XNOR2X1 U346 ( .IN1(\add_121/carry[9] ), .IN2(rng_address[8]), .Q(N127) );
+  AND2X1 U347 ( .IN1(\add_121/carry[8] ), .IN2(rng_address[7]), .Q(
+        \add_121/carry[9] ) );
+  XOR2X1 U348 ( .IN1(rng_address[7]), .IN2(\add_121/carry[8] ), .Q(N126) );
+  AND2X1 U349 ( .IN1(\add_121/carry[7] ), .IN2(rng_address[6]), .Q(
+        \add_121/carry[8] ) );
+  XOR2X1 U350 ( .IN1(rng_address[6]), .IN2(\add_121/carry[7] ), .Q(N125) );
+  OR2X1 U351 ( .IN1(rng_address[5]), .IN2(\add_121/carry[6] ), .Q(
+        \add_121/carry[7] ) );
+  XNOR2X1 U352 ( .IN1(\add_121/carry[6] ), .IN2(rng_address[5]), .Q(N124) );
+  OR2X1 U353 ( .IN1(rng_address[4]), .IN2(\add_121/carry[5] ), .Q(
+        \add_121/carry[6] ) );
+  XNOR2X1 U354 ( .IN1(\add_121/carry[5] ), .IN2(rng_address[4]), .Q(N123) );
   AND2X1 U355 ( .IN1(rng_address[2]), .IN2(rng_address[3]), .Q(
-        \add_120/carry[5] ) );
+        \add_121/carry[5] ) );
   XOR2X1 U356 ( .IN1(rng_address[3]), .IN2(rng_address[2]), .Q(N122) );
-  XOR2X1 U357 ( .IN1(\add_172/carry[31] ), .IN2(N229), .Q(N261) );
-  AND2X1 U358 ( .IN1(N213), .IN2(N235), .Q(\add_172/carry[16] ) );
+  XOR2X1 U357 ( .IN1(\add_173/carry[31] ), .IN2(N229), .Q(N261) );
+  AND2X1 U358 ( .IN1(N213), .IN2(N235), .Q(\add_173/carry[16] ) );
   XOR2X1 U359 ( .IN1(N235), .IN2(N213), .Q(N245) );
   AND2X1 U360 ( .IN1(n345), .IN2(_right[16]), .Q(n317) );
   NOR4X0 U361 ( .IN1(_right[11]), .IN2(_right[10]), .IN3(_right[0]), .IN4(n317), .QN(n322) );

@@ -1,0 +1,57 @@
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/CORE65LPLVT_nom_1.00V_25C.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mem
+Version: F-2011.09-SP5-3
+Date   : Thu May 24 15:55:47 2018
+****************************************
+
+
+Library(s) Used:
+
+    CORE65LPLVT (File: /nfs/home/rrmina/Desktop/VCS/lib/CORE65LPLVT_nom_1.00V_25C.db)
+
+
+Operating Conditions: nom_1.00V_25C   Library: CORE65LPLVT
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mem                    area_312Kto390K   CORE65LPLVT
+
+
+Global Operating Voltage = 1    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   5.3212 mW   (92%)
+  Net Switching Power  = 471.5038 uW    (8%)
+                         ---------
+Total Dynamic Power    =   5.7927 mW  (100%)
+
+Cell Leakage Power     = 136.8594 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           5.0365        6.5740e-04        5.1034e-02            5.0881  (  85.81%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2847            0.4708        8.5828e-02            0.8413  (  14.19%)
+--------------------------------------------------------------------------------------------------
+Total              5.3212 mW         0.4714 mW         0.1369 mW         5.9295 mW
+1

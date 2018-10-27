@@ -1,0 +1,119 @@
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: I-2013.12
+Date   : Tue Mar 20 12:12:23 2018
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    140000            saed90nm_typ
+mux_11bit              8000              saed90nm_typ
+mux_16bit              8000              saed90nm_typ
+mux_1bit               ForQA             saed90nm_typ
+learnCosts             16000             saed90nm_typ
+amISink                8000              saed90nm_typ
+amIDestination         8000              saed90nm_typ
+fixSinkList            16000             saed90nm_typ
+neighborSinkInOtherCluster
+                       8000              saed90nm_typ
+findMyBest             35000             saed90nm_typ
+betterNeighborsInMyCluster
+                       35000             saed90nm_typ
+randomGenerator        8000              saed90nm_typ
+rngAddress             8000              saed90nm_typ
+winnerPolicy           35000             saed90nm_typ
+selectMyAction         8000              saed90nm_typ
+reward                 8000              saed90nm_typ
+winnerPolicy_DW01_sub_0
+                       8000              saed90nm_typ
+rngAddress_DW01_sub_0  8000              saed90nm_typ
+betterNeighborsInMyCluster_DW01_inc_0
+                       8000              saed90nm_typ
+betterNeighborsInMyCluster_DW01_inc_1
+                       8000              saed90nm_typ
+betterNeighborsInMyCluster_DW01_inc_2
+                       8000              saed90nm_typ
+betterNeighborsInMyCluster_DW01_inc_3
+                       8000              saed90nm_typ
+findMyBest_DW01_inc_1  8000              saed90nm_typ
+neighborSinkInOtherCluster_DW01_inc_0
+                       8000              saed90nm_typ
+neighborSinkInOtherCluster_DW01_inc_1
+                       8000              saed90nm_typ
+fixSinkList_DW01_inc_0 8000              saed90nm_typ
+fixSinkList_DW01_inc_1 8000              saed90nm_typ
+fixSinkList_DW01_inc_2 8000              saed90nm_typ
+fixSinkList_DW01_inc_3 8000              saed90nm_typ
+learnCosts_DW01_inc_0  8000              saed90nm_typ
+learnCosts_DW01_inc_1  8000              saed90nm_typ
+learnCosts_DW01_inc_2  8000              saed90nm_typ
+learnCosts_DW01_add_11 8000              saed90nm_typ
+betterNeighborsInMyCluster_DW02_mult_0
+                       8000              saed90nm_typ
+betterNeighborsInMyCluster_DW01_add_10
+                       8000              saed90nm_typ
+betterNeighborsInMyCluster_DW02_mult_1
+                       16000             saed90nm_typ
+betterNeighborsInMyCluster_DW01_add_11
+                       8000              saed90nm_typ
+findMyBest_DW02_mult_0 16000             saed90nm_typ
+findMyBest_DW01_add_3  8000              saed90nm_typ
+fixSinkList_DW01_add_11
+                       8000              saed90nm_typ
+fixSinkList_DW01_inc_4 8000              saed90nm_typ
+findMyBest_DW02_mult_1 8000              saed90nm_typ
+findMyBest_DW01_add_4  8000              saed90nm_typ
+winnerPolicy_DW02_mult_0
+                       8000              saed90nm_typ
+winnerPolicy_DW01_add_2
+                       8000              saed90nm_typ
+winnerPolicy_DW02_mult_1
+                       8000              saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 110.2433 uW   (67%)
+  Net Switching Power  =  53.9059 uW   (33%)
+                         ---------
+Total Dynamic Power    = 164.1492 uW  (100%)
+
+Cell Leakage Power     = 474.8949 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          13.8738            2.5054        1.3671e+08          153.0874  (  23.96%)
+sequential         0.0000            0.0000        6.0068e+05            0.6007  (   0.09%)
+combinational     96.3694           51.4004        3.3758e+08          485.3523  (  75.95%)
+--------------------------------------------------------------------------------------------------
+Total            110.2432 uW        53.9058 uW     4.7489e+08 pW       639.0404 uW
+1

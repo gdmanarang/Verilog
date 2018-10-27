@@ -1,0 +1,144 @@
+1        
+0 ../mapped/top.sdf_c
+33
++cli+1
++itf+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
++memcbk
++neg_tchk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-Xvcs_run_simv=1
+-debug=1
+-full64
+-gen_obj
+-l
+-pp_used
+../lib/CORE65GPSVT.v
+../mapped/top_mapped.v
+../rtl/memory.v
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin/vcs1
+tb_top.v
+top_mapped.log
+94
+sysc_uni_pwd=/nfs/home/rrmina/Desktop/VCS/sim
+XMODIFIERS=@im=none
+XILINXD_LICENSE_FILE=2100@10.158.16.12
+XILINXBIN=/nfs/cad/Xilinx/12.1/ISE_DS/ISE/bin/lin64/
+XDG_SESSION_COOKIE=00d83a2230b2372ed55a019e0000002b-1521517949.419434-568738238
+XAUTHORITY=/var/run/gdm/auth-for-rrmina-zHGFxE/database
+WINDOWPATH=7
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=top_mapped.log
+VCS_HOME=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/
+VCS_DEPTH=0
+VCS_BIN=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/bin
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=amd64
+VCSBIN=/nfs/cad/synopsys/vcs-mx/F-2011.12/bin
+USERNAME=rrmina
+UNAME=/bin/uname
+TOOL_HOME=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64
+SYN_BIN=/nfs/cad/synopsys/syn/I-2013.12/bin
+SYNHOME=/nfs/cad/synopsys
+SYNBIN=/nfs/cad/synopsys/syn/F-2011.09-SP5-3/bin
+STARRCBIN=/nfs/cad/synopsys/starrc/D-2010.06/bin
+SSH_AUTH_SOCK=/tmp/keyring-Gvw4wf/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECTRE_DEFAULTS=-E
+SPECCTRABIN=/nfs/cad/cadence/SPB166/tools.lnx86/specctra/bin
+SPBTOOLSDIR=/nfs/cad/cadence/SPB166/tools.lnx86
+SPBLIBPATH=/nfs/cad/cadence/SPB166/tools.lnx86/lib
+SPBHOME=/nfs/cad/cadence/SPB166
+SPBBIN=/nfs/cad/cadence/SPB166/tools.lnx86/bin
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/12289,unix/unix:/tmp/.ICE-unix/12289
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PTSBIN=/nfs/cad/synopsys/pts/I-2013.12/bin
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-rrmina
+MMSIMLIBPATH2=/nfs/cad/cadence/MMSIM131/tools.lnx86/inca/lib/
+MMSIMLIBPATH1=/nfs/cad/cadence/MMSIM131/tools.lnx86/lib/
+MMSIMHOME=/nfs/cad/cadence/MMSIM131
+MMSIMBIN2=/nfs/cad/cadence/MMSIM131/tools.lnx86/dfII/bin
+MMSIMBIN1=/nfs/cad/cadence/MMSIM131/tools.lnx86/bin
+MLM_LICENSE_FILE=27002@10.158.16.12
+MGLS_LICENSE_FILE=1717@10.158.16.12
+MGC_HOME=/nfs/cad/mentorgraphics/ixl_cal_2013.3_39.24
+MGCBIN=/nfs/cad/mentorgraphics/ixl_cal_2013.3_39.24/bin
+MFLAGS=
+MATLABBIN=/nfs/cad/MATLAB/R2013b/bin/
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_2166_sasqKB
+IUSHOME=/nfs/cad/cadence/IUS82
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICLIBPATH2=/nfs/cad/cadence/IC616/tools.lnx86/lib64
+ICLIBPATH1=/nfs/cad/cadence/IC616/tools.lnx86/lib
+ICCBIN=/nfs/cad/synopsys/icc/H-2013.03-SP5-1/bin
+ICBIN2=/nfs/cad/cadence/IC616/tools.lnx86/dfII/bin
+ICBIN1=/nfs/cad/cadence/IC616/tools.lnx86/bin
+HSPICEBIN=/nfs/cad/synopsys/hspice/D-2010.03-SP1/hspice/bin
+HISTCONTROL=ignoredups
+HERCULESBIN=/nfs/cad/synopsys/hercules/B-2008.09-SP2-1/bin/linux
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/nfs/home/rrmina/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-Gvw4wf/socket
+GNOME_KEYRING_PID=12277
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+FETBIN=/nfs/cad/cadence/SPB166/tools.lnx86/fet/bin
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MpqJuav0Ec,guid=d5188d209475ac09652c1e4b0001de9f
+CXBIN=/nfs/cad/synopsys/cx/D-2010.06/bin
+CVS_RSH=ssh
+CUSTOMDESIGNERBIN=/nfs/cad/synopsys/customdesigner/F-2011.09-SP2-1/bin
+COLORTERM=gnome-terminal
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CWDElseHome
+CDS_LIC_FILE=5280@10.33.183.241
+CDS_AUTO_64BIT=ALL
+CDSHOME=/nfs/cad/cadence/IC616
+CDSDIR=/nfs/cad/cadence
+CDS=/nfs/cad/cadence/IC616
+ASTROBIN=/nfs/cad/synopsys/astro/Z-2007.03-SP12/bin/IA.32
+ALGROBIN=/nfs/cad/cadence/SPB166/tools.lnx86/pcb/bin
+0
+6
+1521531280 ../mapped/top.sdf
+1521282234 tb_top.v
+1518545940 ../lib/CORE65GPSVT.v
+1521531281 ../mapped/top_mapped.v
+1521339159 ../rtl/memory.v
+1385611634 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
+4
+0 
+1385615966 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so
+1385615701 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so
+1385615452 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so

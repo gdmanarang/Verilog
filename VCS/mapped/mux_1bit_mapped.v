@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+
 module mux_1bit ( select, out, in0, in1, in2, in3, in4, in5, in6, in7 );
   input [2:0] select;
   input in0, in1, in2, in3, in4, in5, in6, in7;

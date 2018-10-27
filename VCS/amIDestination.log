@@ -1,0 +1,159 @@
+set_app_var search_path "$search_path mapped lib cons rtl"
+. /nfs/cad/synopsys/syn/I-2013.12/libraries/syn /nfs/cad/synopsys/syn/I-2013.12/minpower/syn /nfs/cad/synopsys/syn/I-2013.12/dw/syn_ver /nfs/cad/synopsys/syn/I-2013.12/dw/sim_ver mapped lib cons rtl mapped lib cons rtl
+set_app_var target_library saed90nm_typ.db
+saed90nm_typ.db
+set_app_var link_library "* $target_library"
+* saed90nm_typ.db
+read_verilog "amIDestination.v"
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.v
+
+Statistics for case statements in always block at line 13 in file
+        '/nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            20            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine amIDestination line 13 in file
+                '/nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|      done_buf_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| iamDestination_buf_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       state_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.db:amIDestination'
+Loaded 1 design.
+Current design is 'amIDestination'.
+amIDestination
+current_design amIDestination
+Current design is 'amIDestination'.
+{amIDestination}
+link
+
+  Linking design 'amIDestination'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  amIDestination              /nfs/home/rrmina/Desktop/VCS/rtl/amIDestination.db
+  saed90nm_typ (library)      /nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db
+
+1
+check_design > check_design.log
+source timing.con
+1
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'amIDestination'
+Information: The register 'state_reg[2]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'amIDestination_DW01_cmp6_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     580.9      0.00       0.0       0.0                          
+    0:00:01     580.9      0.00       0.0       0.0                          
+    0:00:01     580.9      0.00       0.0       0.0                          
+    0:00:01     580.9      0.00       0.0       0.0                          
+    0:00:01     580.9      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     533.7      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+    0:00:01     530.1      0.00       0.0       0.0                          
+Loading db file '/nfs/home/rrmina/Desktop/VCS/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_constraint -all_violators > constraint_report.log
+report_area > area_report.log
+report_timing > timing_report.log
+write_sdf -version 1.0 mapped/amIDestination_mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/nfs/home/rrmina/Desktop/VCS/mapped/amIDestination_mapped.sdf'. (WT-3)
+1
+write -f verilog -hier -out mapped/amIDestination_mapped.v
+Writing verilog file '/nfs/home/rrmina/Desktop/VCS/mapped/amIDestination_mapped.v'.
+1
+gui_start
+Current design is 'amIDestination'.
+dc_shell> exit
+
+Thank you...
+
